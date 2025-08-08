@@ -1,0 +1,8 @@
+build-essential
+cmake
+pkg-config
+mpi-default-dev
+libfftw3-dev
+libgtest-dev
+doxygen
+graphviz

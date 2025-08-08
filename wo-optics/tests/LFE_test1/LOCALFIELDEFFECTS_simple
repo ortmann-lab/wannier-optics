@@ -1,0 +1,13 @@
+10	200.0	1.0
+# Coulomb Matrix Elements in units of eV
+#c1	c2	v1	v2	dummy			S1			S2			Real(W) Imag(W) Potential	Implementation
+1	2	1	1	0	0	0	0	0	0	0	0	0	1.0	0.0	Coulomb3D	Manuell
+2	1	1	1	0	0	0	0	0	0	0	0	0	1.0	0.0	Coulomb3D	Manuell
+1	1	1	2	0	0	0	0	0	0	0	0	0	1.0	0.0	Coulomb3D	Manuell
+1	1	2	1	0	0	0	0	0	0	0	0	0	1.0	0.0	Coulomb3D	Manuell
+1	2	1	2	0	0	0	0	0	0	0	0	0	1.0	0.0	Coulomb3D	Manuell
+2	1	2	1	0	0	0	0	0	0	0	0	0	1.0	0.0	Coulomb3D	Manuell
+2	1	1	2	0	0	0	0	0	0	0	0	0	1.0	0.0	Coulomb3D	Manuell
+1	2	2	1	0	0	0	0	0	0	0	0	0	1.0	0.0	Coulomb3D	Manuell
+1	2	2	2	0	0	0	0	0	0	0	0	0	1.0	0.0	Coulomb3D	Manuell
+2	1	2	2	0	0	0	0	0	0	0	0	0	1.0	0.0	Coulomb3D	Manuell
