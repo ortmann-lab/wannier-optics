@@ -13,11 +13,13 @@ Merkel, K. & Ortmann, F. Journal of Physics: Materials 7, 015001 (2023)
 ## Wannier-Mott Exciton Model
 
 We assume a cubic lattice of length $L$ with one site per unit cell and nearest neighbor hopping for electrons and holes. The electronic structure is given by a tight-binding model,
+
 $$
-H_{el} = \sum_{<ij>} -t_\text{el}\,\, a_i^\dagger a_j + E_0,
+H_{el} = \sum_{<ij>} -t_\text{el} a_i^\dagger a_j + E_0, 
 $$
+
 $$
-H_{h} = \sum_{<ij>} t_\text{h} \,\,h_i^\dagger h_j.
+H_{h} = \sum_{<ij>} t_\text{h} h_i^\dagger h_j.
 $$
 The resulting band structure can be found as
 $$
@@ -28,33 +30,44 @@ E_\text{h}(k) = 2t_\text{h} \left( \cos(k_xL) +\cos(k_yL)+\cos(k_zL)\right).
 $$
 
 We construct the exciton Hamiltonian and include the electron-hole interaction. For simplicity we chose a static screening with $\epsilon_{\infty}$ and do not include local field effects. The resulting model is given by
+
 $$
 H(k,k') = \left[ E_\text{el}(k) - E_\text{h}(k) \right] \delta_{kk'} - \frac{1}{\epsilon_{\infty}} \tilde{V}(k-k'),
 $$
+
 where $\tilde{V}(k-k')$ is the bare Coulomb potential in $k$-space.
 To obtain an analytical solution of this model, we perform a Taylor expansion of the band energies around $k=0$
+
 $$
 E_\text{el}(k) - E_\text{h}(k) 
 \approx E_0 -2(t_\text{el} + t_\text{h}) \left( 3-\frac{1}{2}L^2|k|^2  + \frac{1}{24}L^4 |k|^4 - ...  \right)
 $$
+
 By expanding the exciton Hamiltonian up to second order we obtain the **hydrogen-like problem**,
+
 $$
 H(k,k') 
 = \frac{\hbar^2k^2}{2\mu} \delta_{kk'} - \frac{1}{\epsilon_{\infty}} \tilde{V}(k-k') + E_\text{g},
 $$
+
 with an effective mass $\mu = \frac{\hbar^2}{2(t_\text{el} + t_\text{h})L^2}$ and $E_\text{g} = E_0 -6(t_\text{el} + t_\text{h})$ the band gap without electron-hole interaction. The exciton energies follow a **Rydberg series**,
+
 $$
 E_{n} = E_\text{g} - \frac{R_\text{ex}}{n^2\epsilon_{\infty}^2}m
 $$
+
 where the exciton Rydberg energy $R_\text{ex}$ and exciton Bohr radius $a_\text{B}$ are,
+
 $$
 R_\text{ex} = \frac{e^4 \mu}{2(4\pi \epsilon_{0})^2 \hbar^2}
 $$
+
 $$
 a_\text{B} = \frac{4\pi\epsilon_{0} \epsilon_{\infty} \hbar^2 }{\mu e^2}.
 $$
 
 This result can be further improved by calculating the energy shifts due to the $k^4$ term, which would correspond to a relativistic correction of the hydrogen atom (fine structure without spin-orbit coupling). In complete analogy, they can be calculated using perturbation theory,
+
 $$
 \Delta E_{nl}
 = -\frac{1}{12} \frac{E_n^2}{(t_\text{el} + t_\text{h})}  \left[ \frac{4n}{(l+1/2)} - 3 \right].
