@@ -1,0 +1,15 @@
+# Mapping of Wannier functions (valence or conduction)
+#
+# This file contains the mapping Wannier functions given by their
+# quantum number (id) to the path of the associated XSF file (XCrysDen Structure
+# File) that is obtained from wannier90.
+# The id also specifies the c1,c2,v1 and v2 variables in the plan and output file.
+#
+# Format: id --> path/to/xsf-file
+#
+1 --> w90_calculations/conduction_band/wannier90_00001_shifted.xsf
+2 --> w90_calculations/conduction_band/wannier90_00002_shifted.xsf
+3 --> w90_calculations/conduction_band/wannier90_00003_shifted.xsf
+4 --> w90_calculations/conduction_band/wannier90_00004_shifted.xsf
+5 --> w90_calculations/conduction_band/wannier90_00005_shifted.xsf
+6 --> w90_calculations/conduction_band/wannier90_00006.xsf

@@ -1,0 +1,63 @@
+Use output directory of Coulomb calculation:  .
+[+] Read mapping files.
+   - read ./vmapping.txt
+   - found w90 calculation for valence states: w90_calculations/valence_band, seedname: wannier90
+   - read ./cmapping.txt
+   - found w90 calculation for conduction states: w90_calculations/conduction_band, seedname: wannier90
+[+] Read Wannier Hamiltonian from w90 calculations.
+   - read w90_calculations/valence_band
+   - number of transfer integrals (original):  24364
+   - enforce minimum hopping of 0.001eV
+   - use ws_distance corrections from file  w90_calculations/valence_band/wannier90_wsvec.dat
+   - read w90_calculations/conduction_band
+   - number of transfer integrals (original):  54822
+   - enforce minimum hopping of 0.001eV
+   - use ws_distance corrections from file  w90_calculations/conduction_band/wannier90_wsvec.dat
+[+] Read POSFILE from ./POSFILE
+   - check compatibility with w90 calculations
+[+] Make tight-binding model compatible with POSFILE (compatible with Coulomb calculations)
+   - shift valence Wannier functions
+   - difference to POSFILE (after shift):
+    0: 	[-6.0974815e-05  1.0309709e-05  1.0313068e-05] 	norm = 6.269431820762902e-05
+    1: 	[-6.0972315e-05 -6.0965137e-05 -6.0981488e-05] 	norm = 0.00010560829988478603
+    2: 	[ 1.0310573e-05  1.0318537e-05 -6.0961221e-05] 	norm = 6.268213929989113e-05
+    3: 	[ 1.0308318e-05 -6.0985659e-05  1.0309557e-05] 	norm = 6.270405879354324e-05
+   - shift conduction Wannier functions
+   - difference to POSFILE (after shift):
+    0: 	[-0.0009079   0.00042804 -0.00090988] 	norm = 0.0013547616262192834
+    1: 	[-0.00173517 -0.00039672 -0.00090794] 	norm = 0.001998134988408479
+    2: 	[0.00142405 0.0047904  0.00142454] 	norm = 0.005196650928822186
+    3: 	[-0.00177388  0.00159191  0.00142393] 	norm = 0.0027764042929688854
+    4: 	[ 0.00142423  0.00159235 -0.00177407] 	norm = 0.0027769289736083195
+    5: 	[-0.00091004 -0.00039906 -0.00173547] 	norm = 0.0019998166013093753
+[+] Additional pruning of the tight-binding model
+   - valence states
+   - skip maximal distance of transfer integrals
+   - skip R limit.
+   - conduction states
+   - skip maximal distance of transfer integrals
+   - skip R limit.
+[+] Clean up TB-model.
+   - valence states
+   - conduction states
+Ignoring TI=[np.complex128(0.0018225-1.25e-05j), 0, 2, array([ 4, -5,  0])] (conjugate pair already set!)
+Ignoring TI=[np.complex128(0.0010425+7e-06j), 2, 0, array([-3,  6, -1])] (conjugate pair already set!)
+[+] Optimize min_hopping.
+   - try to find optimal cut-off value for min_hopping
+   - searching interval (eV) [0.001, 0.01]
+   - sparsity penalty:  0.05
+   - k-grid for optimization:  [5, 5, 5]
+   - optimize valence states ...
+   --> optimized minimal hopping (cut-off): 0.005806755261438585eV
+   - optimize conduction states ...
+   --> optimized minimal hopping (cut-off): 0.009463744078756468eV
+[+] Plot results.
+/home/kmerkel/Code_group/wannier-optics/tutorial/01_Si/solution/./wo-tight-binding.py:97: RuntimeWarning: divide by zero encountered in log10
+  ax.scatter(dist_raw,np.log10(np.abs(ham_raw)), label="all (Wannier90)")
+[+] Write wannier-optics input files.
+write ./TINFILE_v
+write ./ONSITE_ENERGY_v
+write ./TINFILE_c
+write ./ONSITE_ENERGY_c
+skip PARFILE (already exists)
+Finish.

@@ -1,0 +1,21 @@
+ [output]
+ Num CPU       =            8
+ nT            =            0
+ NRECURS       =         1000
+ NPOL          =           20
+ N_ENERGIES    =        32000
+ TWRITE        =            1
+ T             =   0.20000000000000001     
+ EPS           =    1.0000000000000001E-005
+ DOSEMIN       =    0.0000000000000000     
+ DOSEMAX       =    10.000000000000000     
+ saveWavPacks  =  F
+ NNEIGH        =            6
+ DIRECTION     = x
+ cell dim1     =          351
+ cell dim2     =          351
+ cell dim3     =          351
+ gamma         =    1.0000000000000000     
+ Volume        =    3375.0000000000000     
+ Volume / site =    3375.0000000000000     
+ dipole_norm   =    0.0000000000000000     

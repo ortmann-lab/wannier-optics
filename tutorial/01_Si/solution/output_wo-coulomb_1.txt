@@ -1,0 +1,147 @@
+compiled from git commit:  1e5f46df0b1564cc5441809a74b5f00507df1427 on Jul  9 2025 at 13:59:52
+
+  ______                _                _        _____                                           _ 
+ / _____)              | |              | |      (_____)        _                                | |
+| /        ___   _   _ | |  ___   ____  | | _       _    ____  | |_    ____   ____   ____   ____ | |
+| |       / _ \ | | | || | / _ \ |    \ | || \     | |  |  _ \ |  _)  / _  ) / _  | / ___) / _  || |
+| \_____ | |_| || |_| || || |_| || | | || |_) )   _| |_ | | | || |__ ( (/ / ( ( | || |    ( ( | || |
+ \______) \___/  \____||_| \___/ |_|_|_||____/   (_____)|_| |_| \___) \____) \_|| ||_|     \_||_||_|
+                                                                            (_____|                 
+
+Citation:	Merkel, K. & Ortmann, F. Journal of Physics: Materials 7, 015001 (2023)
+         	https://dx.doi.org/10.1088/2515-7639/ad06cd
+
+
+
+Generate configuration files for you...
+[+] Write configuration file input.ini
+[+] Write plan file CUSTOM
+Path to valence Wannier functions? w90_calculations/valence_band
+wannier90 seedname for valence WF? [default=wannier90] 
+[+] Write vmapping.txt
+	1 --> w90_calculations/valence_band/wannier90_00001.xsf
+	2 --> w90_calculations/valence_band/wannier90_00002.xsf
+	3 --> w90_calculations/valence_band/wannier90_00003.xsf
+	4 --> w90_calculations/valence_band/wannier90_00004.xsf
+Path to conduction Wannier functions? w90_calculations/conduction_band
+wannier90 seedname for conduction WF? [default=wannier90] 
+[+] Write cmapping.txt
+	1 --> w90_calculations/conduction_band/wannier90_00001.xsf
+	2 --> w90_calculations/conduction_band/wannier90_00002.xsf
+	3 --> w90_calculations/conduction_band/wannier90_00003.xsf
+	4 --> w90_calculations/conduction_band/wannier90_00004.xsf
+	5 --> w90_calculations/conduction_band/wannier90_00005.xsf
+	6 --> w90_calculations/conduction_band/wannier90_00006.xsf
+[+] Read mappings from file
+Valence Wannier functions:
+1 --> w90_calculations/valence_band/wannier90_00001.xsf
+2 --> w90_calculations/valence_band/wannier90_00002.xsf
+3 --> w90_calculations/valence_band/wannier90_00003.xsf
+4 --> w90_calculations/valence_band/wannier90_00004.xsf
+Conduction Wannier functions:
+1 --> w90_calculations/conduction_band/wannier90_00001.xsf
+2 --> w90_calculations/conduction_band/wannier90_00002.xsf
+3 --> w90_calculations/conduction_band/wannier90_00003.xsf
+4 --> w90_calculations/conduction_band/wannier90_00004.xsf
+5 --> w90_calculations/conduction_band/wannier90_00005.xsf
+6 --> w90_calculations/conduction_band/wannier90_00006.xsf
+
+[+] Read Wannier functions (xsf-files):
+open WF from file: w90_calculations/valence_band/wannier90_00001.xsf
+File already contains a supercell (11.00000 x 11.00000 x 11.00000)
+Norm from file: 40.615625080834
+open WF from file: w90_calculations/valence_band/wannier90_00002.xsf
+File already contains a supercell (11.00000 x 11.00000 x 11.00000)
+Norm from file: 40.615624957342
+open WF from file: w90_calculations/valence_band/wannier90_00003.xsf
+File already contains a supercell (11.00000 x 11.00000 x 11.00000)
+Norm from file: 40.615624472143
+open WF from file: w90_calculations/valence_band/wannier90_00004.xsf
+File already contains a supercell (11.00000 x 11.00000 x 11.00000)
+Norm from file: 40.615624862028
+open WF from file: w90_calculations/conduction_band/wannier90_00001.xsf
+File already contains a supercell (11.00000 x 11.00000 x 11.00000)
+Norm from file: 40.608417618989
+open WF from file: w90_calculations/conduction_band/wannier90_00002.xsf
+File already contains a supercell (11.00000 x 11.00000 x 11.00000)
+Norm from file: 40.608415587623
+open WF from file: w90_calculations/conduction_band/wannier90_00003.xsf
+File already contains a supercell (11.00000 x 11.00000 x 11.00000)
+Norm from file: 40.608089340892
+open WF from file: w90_calculations/conduction_band/wannier90_00004.xsf
+File already contains a supercell (11.00000 x 11.00000 x 11.00000)
+Norm from file: 40.608128420192
+open WF from file: w90_calculations/conduction_band/wannier90_00005.xsf
+File already contains a supercell (11.00000 x 11.00000 x 11.00000)
+Norm from file: 40.608102158537
+open WF from file: w90_calculations/conduction_band/wannier90_00006.xsf
+File already contains a supercell (11.00000 x 11.00000 x 11.00000)
+Norm from file: 40.608424866624
+[+] Done reading all files.
+[+] Calculate Wannier centers ... done.
+Wannier centers for valence WF (without shift):
+	1	: r=(0.678810974815, -0.678456013879, -0.678456007239)
+	2	: r=(0.678810972314, 0.678810975136, 0.678810971487)
+	3	: r=(-0.678456014609, -0.678456012575, 0.678810971220)
+	4	: r=(-0.678456012313, 0.678810975658, -0.678456023552)
+Wannier centers for conduction WF (without shift):
+	1	: r=(-1.342899780977, 0.789697745148, -1.343073973866)
+	2	: r=(-0.784179064033, 1.348594755372, -1.342905507762)
+	3	: r=(-2.703478622577, -0.562232690677, 2.716542654919)
+	4	: r=(0.569093612613, -0.000382129613, 0.005821093312)
+	5	: r=(0.005828291159, -0.000384733357, 0.569095104046)
+	6	: r=(1.367768898319, 1.348366229577, 1.926606947704)
+
+[+] Shift valence Wannier functions to home cell...
+	1	: apply shift to home cell (0, 1, 0)
+write shifted WF to file: w90_calculations/valence_band/wannier90_00001_shifted.xsf
+	2	: already in home cell
+	3	: apply shift to home cell (1, 0, 0)
+write shifted WF to file: w90_calculations/valence_band/wannier90_00003_shifted.xsf
+	4	: apply shift to home cell (0, 0, 1)
+write shifted WF to file: w90_calculations/valence_band/wannier90_00004_shifted.xsf
+[+] Write vmapping.txt
+	1 --> w90_calculations/valence_band/wannier90_00001_shifted.xsf
+	2 --> w90_calculations/valence_band/wannier90_00002.xsf
+	3 --> w90_calculations/valence_band/wannier90_00003_shifted.xsf
+	4 --> w90_calculations/valence_band/wannier90_00004_shifted.xsf
+
+[+] Shift conduction Wannier functions to home cell...
+	1	: apply shift to home cell (0, 0, 1)
+write shifted WF to file: w90_calculations/conduction_band/wannier90_00001_shifted.xsf
+	2	: apply shift to home cell (0, 0, 1)
+write shifted WF to file: w90_calculations/conduction_band/wannier90_00002_shifted.xsf
+	3	: apply shift to home cell (2, 0, 0)
+write shifted WF to file: w90_calculations/conduction_band/wannier90_00003_shifted.xsf
+	4	: apply shift to home cell (0, 1, 0)
+write shifted WF to file: w90_calculations/conduction_band/wannier90_00004_shifted.xsf
+	5	: apply shift to home cell (1, 0, 0)
+write shifted WF to file: w90_calculations/conduction_band/wannier90_00005_shifted.xsf
+	6	: already in home cell
+[+] Write cmapping.txt
+	1 --> w90_calculations/conduction_band/wannier90_00001_shifted.xsf
+	2 --> w90_calculations/conduction_band/wannier90_00002_shifted.xsf
+	3 --> w90_calculations/conduction_band/wannier90_00003_shifted.xsf
+	4 --> w90_calculations/conduction_band/wannier90_00004_shifted.xsf
+	5 --> w90_calculations/conduction_band/wannier90_00005_shifted.xsf
+	6 --> w90_calculations/conduction_band/wannier90_00006.xsf
+
+(shifted) Wannier centers for valence WF:
+	1	: r=(0.678810974815, 2.036239690290, 2.036239696930)
+	2	: r=(0.678810972314, 0.678810975136, 0.678810971487)
+	3	: r=(2.036239689426, 2.036239691461, 0.678810971220)
+	4	: r=(2.036239691681, 0.678810975658, 2.036239680442)
+(shifted) Wannier centers for conduction WF:
+	1	: r=(1.367889149421, 0.789697745148, 1.367714956532)
+	2	: r=(1.926609859458, 1.348594755372, 1.367883415729)
+	3	: r=(2.716644013820, 4.857889945720, 2.716542654919)
+	4	: r=(0.569093612613, 2.710380417428, 2.716583640353)
+	5	: r=(2.716590829393, 2.710377804877, 0.569095104046)
+	6	: r=(1.367768898319, 1.348366229577, 1.926606947704)
+
+[+] Create POSFILE
+[+] Done generating POSFILE.
+
+[NOTICE]   If you want to use WannierOptics later, you need to make sure
+[NOTICE]   that the generated POSFILE is in agreement with your tight-binding
+[NOTICE]   model for valence and conduction band structure!

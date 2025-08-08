@@ -1,0 +1,173 @@
+ 
+  __      __                                               
+ /\ \  __/\ \                           __                 
+ \ \ \/\ \ \ \     __      ___     ___ /\_\     __   _ __  
+  \ \ \ \ \ \ \  /'__`\  /' _ `\ /' _ `\/\ \  /'__`\/\`'__\
+   \ \ \_/ \_\ \/\ \L\.\_/\ \/\ \/\ \/\ \ \ \/\  __/\ \ \/ 
+    \ `\___x___/\ \__/.\_\ \_\ \_\ \_\ \_\ \_\ \____\\ \_\ 
+     '\/__//__/  \/__/\/_/\/_/\/_/\/_/\/_/\/_/\/____/ \/_/ 
+                                                           
+                                                           
+          _____           __                               
+         /\  __`\        /\ \__  __                        
+         \ \ \/\ \  _____\ \ ,_\/\_\    ___    ____        
+          \ \ \ \ \/\ '__`\ \ \/\/\ \  /'___\ /',__\       
+           \ \ \_\ \ \ \L\ \ \ \_\ \ \/\ \__//\__, `\      
+            \ \_____\ \ ,__/\ \__\\ \_\ \____\/\____/      
+             \/_____/\ \ \/  \/__/ \/_/\/____/\/___/       
+                      \ \_\                                
+                       \/_/                                
+ 
+ Citation:  Merkel, K. & Ortmann, F. Journal of Physics: Materials 7, 015001 (2023)
+            https://dx.doi.org/10.1088/2515-7639/ad06cd
+ 
+ 
+ 
+ Calculation is performed with            8 processes
+ 
+ Parameter from PARFILE:
+ nT                  =            0
+ NRECURS             =         1000
+ NPOL                =           20
+ N_ENERGIES          =        32000
+ TWRITE              =            1
+ T                   =   0.20000000000000001     
+ EPS                 =    1.0000000000000001E-005
+ DOSEMIN             =    0.0000000000000000     
+ DOSEMAX             =    10.000000000000000     
+ DOS_PROJECTION      = none                
+ NNEIGH              =            6
+ DIRECTION           = x
+ DISORDER_MODEL      = none                
+ DISORDER_STRENGTH   =    0.0000000000000000     
+ DEBUGGING           =  F
+ FORCE_HERMITIAN     =  F
+ CHECK_DUBLICATES    =  F
+ 
+ Initialize random numbers generator with seed0 (hardcoded values)
+ Seed size:            8
+ 
+ Positions given in cartesian coordinates.
+ Positions given in cartesian coordinates.
+ Geometry of the supercell:
+ Dimensions (reshaped)           :         351         351         351
+ Decomposition into local domains:           2           2           2
+ Boundary conditions             :           1           1           1
+ 
+ Unit cell:
+   15.000000000000000        0.0000000000000000        0.0000000000000000     
+   0.0000000000000000        15.000000000000000        0.0000000000000000     
+   0.0000000000000000        0.0000000000000000        15.000000000000000     
+ 
+ Positions of valence WF coordinates (in cartesian basis):
+           1 :    0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ 
+ Positions of conduction WF coordinates (in cartesian basis):
+           1 :    0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ 
+
+ Generate random phase state (for all sites)...
+ 
+ Set up optical transition dipoles...
+ Read file: TRANSITION
+ Normalize optical dipole state... (initial norm =    0.0000000000000000      )
+ Calculate actual autocorrelation function without any projection.
+ 
+ Setup and state preparation finished.
+ ================================================================
+ 
+ Create Hamiltonian ...
+ 
+ Read onsite energies ...
+ Onsite energies for valence (outer) sites:
+           1   0.0000000000000000     
+ Onsite energies for conduction (inner) sites:
+           1   13.000000000000000     
+ 
+ Read and extract single particle TIs from TINFILES...
+ Maximum absolute shifts =            1           1           1
+ Maximum absolute shifts =            1           1           1
+ 
+ Read valence (outer) TINFILE ...
+ --> Number of valence TI =            6
+ Read conduction (inner) TINFILE ...
+ --> Number of conduciton TI =            6
+ Internal energy scale:  gamma =    1.0000000000000000     
+ --> Estimated number of single-particle TI =           12
+ --> Actual number of single-particle TI    =            6
+ 
+ Check hermiticity for TIsingle...
+ --> single particle TIs are hermitian :D
+ 
+ Read and extract excitonic TIs from LOCALFIELDEFFECTS and COULOMB file...
+ minS =            0           0           0
+ maxS =            0           0           0
+ minS =            0           0           0
+ maxS =            0           0           0
+ 
+ Set up optical Exciton Hamiltonian (only vertical excitations!)...
+ Maximal number of neighbors used =            6 from possible nneigh=           6
+ 
+ Generate Coulomb potential: WW =    1.0000000000000000     
+ --> Use Monopole-Monopole interaction for distances >    0.0000000000000000     
+ --> Total number of COULOMB matrix elements   =            1
+ --> Number of diagonal matrix elements        =            1
+ All Coulomb onsite energies are used :D
+ 
+ Generate local field effects: WW_FE =    1.0000000000000000     
+ --> Total number of LFE matrix elements =            0
+ --> Number of diagonal matrix elements  =            0
+ All LFE onsite energies are used :D
+ 
+ Disorder model = none --> calculation without disorder!
+ 
+ Hamiltonian finished.
+ ================================================================
+ 
+ Setting ParallelMatVec module...
+ 
+ Performing preprocessing...
+   Step 1 of 5 in CSR implementation (reorder local sites)
+   Step 2 of 5 CSR implementation (create local CSR part)
+   Step 3 of 5 CSR implementation (exchange boundaries)
+   Step 4 of 5 CSR implementation  (create external CSR part)
+   Step 5 of 5 CSR (allocate MatVecCommTables)
+ 
+ Preprocessing finished.
+ ================================================================
+ 
+ Starting DOS calculation...
+ DOS-Lanczos finished :D
+ 
+ 
+ 
+ !!!!!!!!!!!!!!!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!!!!!!!!!!!!!
+ 
+  You are not converged with the number of Chebyshev polynomials!
+  Please increase the value of NPOL in the PARFILE.
+ 
+ !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ 
+ 
+ Entering time evolution...
+
+ # -----------------------------------------------------------------------------------------------------
+ # Step       | Time                   | Overlap < Psi(t) | Psi(0) >                  | Norm < Psi(t) | Psi(t) >      <-- TIME
+ # -----------------------------------------------------------------------------------------------------
+           0   0.0000000000000000        0.0000000000000000        0.0000000000000000        0.0000000000000000       <-- TIME
+ Time evolution finished :D
+ 
+ All calculations finished.
+ ================================================================
+ 
+ Timing info (in seconds)
+ whole execution               :    210.25611888300000     
+ creating Hamiltonian          :    4.3511298470000002     
+ PSI/XUPSI reading or creating :    2.9043987019999999     
+ all preprocessing up to DOS   :    11.790302894000000     
+ Lanczos DOS                   :    190.51021054800000     
+ Interval + Density            :   0.49231458299999531     
+ Time evolution                :    4.9298646000011104E-002
+ 
+ one Lanczos recursion max     :    190.50858386300001       , sum :   1524.0659644739999     
+ timeEvolution   0.51843357699999615       , sum :   3.6095945099999938     

@@ -1,0 +1,74 @@
+ [general]
+ #------------------------------------------------------------------------------
+ #                              TECHNICAL PARAMETERS
+ #------------------------------------------------------------------------------
+ 
+ # Number of neighboring connections for every site:
+ # values < 0 : use heuristics (might not work or is inefficient)
+ NNEIGH       =           -1
+ 
+ # Additional tests and output? (T/F)
+ DEBUGGING    =  F
+ 
+ # Enforce Hamiltonian to be hermitian? (T/F)
+ FORCE_HERMITIAN    =  F
+ 
+ # Check matrix elements of the Hamiltonian for dublicates? (T/F)
+ # (Could be very slow!)
+ CHECK_DUBLICATES    =  F
+ 
+ 
+ #------------------------------------------------------------------------------
+ #                                 TIME EVOLUTION
+ #------------------------------------------------------------------------------
+ 
+ # Length of time step (in internal units = largest transfer integral):
+ T            =   0.20000000000000001     
+ 
+ # Number of time steps:
+ nT           =         500
+ 
+ # Number of Chebyshev polynomials:
+ NPOL         =           20
+ 
+ # After which time steps you want to write output?
+ TWRITE       =            1
+ 
+ 
+ #------------------------------------------------------------------------------
+ #                              DENSITY OF STATES (DOS)
+ #------------------------------------------------------------------------------
+ 
+ # Number of Lanczos recursions
+ NRECURS      =         1000
+ 
+ # Lorentzian broadening of the peaks
+ EPS          =    9.9999999999999995E-007
+ 
+ # Energy steps and boundarys for DOS output file:
+ N_ENERGIES   =        32000
+ DOSEMIN      =   -10.000000000000000     
+ DOSEMAX      =    10.000000000000000     
+ 
+ # Use projected DOS? (values = none,x,y,z)
+ DOS_PROJECTION = none                
+ 
+ 
+ #------------------------------------------------------------------------------
+ #                                      OPTIC
+ #------------------------------------------------------------------------------
+ 
+ # Polarization direction (values = x,y,z)
+ DIRECTION    = x
+ 
+ 
+ #------------------------------------------------------------------------------
+ #                                     DISORDER
+ #------------------------------------------------------------------------------
+ 
+ # Using additional disorder for diagonal parts of the Hamiltonian.
+ # This is only experimental! There are no derivations or extensive tests for
+ # exciton Hamiltonians!!!!
+ # Available disorder models = none, ANDERSON
+ DISORDER_MODEL    = none                
+ DISORDER_STRENGTH =    0.0000000000000000     

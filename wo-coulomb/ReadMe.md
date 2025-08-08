@@ -1,6 +1,6 @@
 # Calculation of transition matrix elements, Coulomb integrals and local field effects
 
-Publication: [Merkel, K. & Ortmann, F. Linear scaling approach for optical excitations using maximally localized Wannier functions. Journal of Physics: Materials 7, 015001 (2023).]( https://dx.doi.org/10.1088/2515-7639/ad06cd )
+Publication: [Merkel, K. & Ortmann, F. Linear scaling approach for optical excitations using maximally localized Wannier functions. Journal of Physics: Materials 7, 015001 (2024).]( https://dx.doi.org/10.1088/2515-7639/ad06cd )
 
 
 
@@ -8,7 +8,9 @@ Publication: [Merkel, K. & Ortmann, F. Linear scaling approach for optical excit
 ## Coulomb integrals
 
 `wo-coulomb.x` calculates the following integrals:
-$$ W^{c_1 c_2}_{v_1 v_2}(R_c,R_v, R_D) = \int d^3 x  \int d^3 x' \rho_{c_1 c_2 R_c}(x) W(x-x'-R_D) \rho_{v_1 v_2 R_v}(x'), $$
+$$
+W^{c_1 c_2}_{v_1 v_2}(R_c,R_v, R_D) = \int d^3 x  \int d^3 x' \rho_{c_1 c_2 R_c}(x) W(x-x'-R_D) \rho_{v_1 v_2 R_v}(x'),
+$$
 where the overlap densities for conduction Wannier functions $\rho_{c_1 c_2R_c}$ and valence Wannier functions $\rho_{v_1 v_2R_v}$ are given by
 $$\rho_{c_1 c_2R_c}(x) = w_{c_1 0}(x) w_{c_2 R_c}(x), $$
 $$ \rho_{v_1 v_2 R_v}(x) = w_{v_1 0}(x) w_{v_2 R_v}(x). $$
