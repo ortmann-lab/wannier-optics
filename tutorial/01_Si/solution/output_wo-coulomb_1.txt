@@ -8,7 +8,7 @@ compiled from git commit:  1e5f46df0b1564cc5441809a74b5f00507df1427 on Jul  9 20
  \______) \___/  \____||_| \___/ |_|_|_||____/   (_____)|_| |_| \___) \____) \_|| ||_|     \_||_||_|
                                                                             (_____|                 
 
-Citation:	Merkel, K. & Ortmann, F. Journal of Physics: Materials 7, 015001 (2023)
+Citation:	Merkel, K. & Ortmann, F. Journal of Physics: Materials 7, 015001 (2024)
          	https://dx.doi.org/10.1088/2515-7639/ad06cd
 
 

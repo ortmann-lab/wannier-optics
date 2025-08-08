@@ -9,7 +9,7 @@ compiled from git commit:  1e5f46df0b1564cc5441809a74b5f00507df1427 on Jul  9 20
  \______) \___/  \____||_| \___/ |_|_|_||____/   (_____)|_| |_| \___) \____) \_|| ||_|     \_||_||_|
                                                                             (_____|                 
 
-Citation:	Merkel, K. & Ortmann, F. Journal of Physics: Materials 7, 015001 (2023)
+Citation:	Merkel, K. & Ortmann, F. Journal of Physics: Materials 7, 015001 (2024)
          	https://dx.doi.org/10.1088/2515-7639/ad06cd
 
 
@@ -160,7 +160,326 @@ Origin		: -5  -5  -5
 
 
 Start Calculations...
-Progress: 0.31 %		Progress: 0.63 %		Progress: 0.94 %		Progress: 1.25 %		Progress: 1.56 %		Progress: 1.88 %		Progress: 2.19 %		Progress: 2.50 %		Progress: 2.82 %		Progress: 3.13 %		Progress: 3.44 %		Progress: 3.76 %		Progress: 4.07 %		Progress: 4.38 %		Progress: 4.69 %		Progress: 5.01 %		Progress: 5.32 %		Progress: 5.63 %		Progress: 5.95 %		Progress: 6.26 %		Progress: 6.57 %		Progress: 6.89 %		Progress: 7.20 %		Progress: 7.51 %		Progress: 7.82 %		Progress: 8.14 %		Progress: 8.45 %		Progress: 8.76 %		Progress: 9.08 %		Progress: 9.39 %		Progress: 9.70 %		Progress: 10.02 %		Progress: 10.33 %		Progress: 10.64 %		Progress: 10.95 %		Progress: 11.27 %		Progress: 11.58 %		Progress: 11.89 %		Progress: 12.21 %		Progress: 12.52 %		Progress: 12.83 %		Progress: 13.15 %		Progress: 13.46 %		Progress: 13.77 %		Progress: 14.08 %		Progress: 14.40 %		Progress: 14.71 %		Progress: 15.02 %		Progress: 15.34 %		Progress: 15.65 %		Progress: 15.96 %		Progress: 16.28 %		Progress: 16.59 %		Progress: 16.90 %		Progress: 17.21 %		Progress: 17.53 %		Progress: 17.84 %		Progress: 18.15 %		Progress: 18.47 %		Progress: 18.78 %		Progress: 19.09 %		Progress: 19.41 %		Progress: 19.72 %		Progress: 20.03 %		Progress: 20.34 %		Progress: 20.66 %		Progress: 20.97 %		Progress: 21.28 %		Progress: 21.60 %		Progress: 21.91 %		Progress: 22.22 %		Progress: 22.54 %		Progress: 22.85 %		Progress: 23.16 %		Progress: 23.47 %		Progress: 23.79 %		Progress: 24.10 %		Progress: 24.41 %		Progress: 24.73 %		Progress: 25.04 %		Progress: 25.35 %		Progress: 25.67 %		Progress: 25.98 %		Progress: 26.29 %		Progress: 26.60 %		Progress: 26.92 %		Progress: 27.23 %		Progress: 27.54 %		Progress: 27.86 %		Progress: 28.17 %		Progress: 28.48 %		Progress: 28.79 %		Progress: 29.11 %		Progress: 29.42 %		Progress: 29.73 %		Progress: 30.05 %		Progress: 30.36 %		Progress: 30.67 %		Progress: 30.99 %		Progress: 31.30 %		Progress: 31.61 %		Progress: 31.92 %		Progress: 32.24 %		Progress: 32.55 %		Progress: 32.86 %		Progress: 33.18 %		Progress: 33.49 %		Progress: 33.80 %		Progress: 34.12 %		Progress: 34.43 %		Progress: 34.74 %		Progress: 35.05 %		Progress: 35.37 %		Progress: 35.68 %		Progress: 35.99 %		Progress: 36.31 %		Progress: 36.62 %		Progress: 36.93 %		Progress: 37.25 %		Progress: 37.56 %		Progress: 37.87 %		Progress: 38.18 %		Progress: 38.50 %		Progress: 38.81 %		Progress: 39.12 %		Progress: 39.44 %		Progress: 39.75 %		Progress: 40.06 %		Progress: 40.38 %		Progress: 40.69 %		Progress: 41.00 %		Progress: 41.31 %		Progress: 41.63 %		Progress: 41.94 %		Progress: 42.25 %		Progress: 42.57 %		Progress: 42.88 %		Progress: 43.19 %		Progress: 43.51 %		Progress: 43.82 %		Progress: 44.13 %		Progress: 44.44 %		Progress: 44.76 %		Progress: 45.07 %		Progress: 45.38 %		Progress: 45.70 %		Progress: 46.01 %		Progress: 46.32 %		Progress: 46.64 %		Progress: 46.95 %		Progress: 47.26 %		Progress: 47.57 %		Progress: 47.89 %		Progress: 48.20 %		Progress: 48.51 %		Progress: 48.83 %		Progress: 49.14 %		Progress: 49.45 %		Progress: 49.77 %		Progress: 50.08 %		Progress: 50.39 %		Progress: 50.70 %		Progress: 51.02 %		Progress: 51.33 %		Progress: 51.64 %		Progress: 51.96 %		Progress: 52.27 %		Progress: 52.58 %		Progress: 52.90 %		Progress: 53.21 %		Progress: 53.52 %		Progress: 53.83 %		Progress: 54.15 %		Progress: 54.46 %		Progress: 54.77 %		Progress: 55.09 %		Progress: 55.40 %		Progress: 55.71 %		Progress: 56.03 %		Progress: 56.34 %		Progress: 56.65 %		Progress: 56.96 %		Progress: 57.28 %		Progress: 57.59 %		Progress: 57.90 %		Progress: 58.22 %		Progress: 58.53 %		Progress: 58.84 %		Progress: 59.15 %		Progress: 59.47 %		Progress: 59.78 %		Progress: 60.09 %		Progress: 60.41 %		Progress: 60.72 %		Progress: 61.03 %		Progress: 61.35 %		Progress: 61.66 %		Progress: 61.97 %		Progress: 62.28 %		Progress: 62.60 %		Progress: 62.91 %		Progress: 63.22 %		Progress: 63.54 %		Progress: 63.85 %		Progress: 64.16 %		Progress: 64.48 %		Progress: 64.79 %		Progress: 65.10 %		Progress: 65.41 %		Progress: 65.73 %		Progress: 66.04 %		Progress: 66.35 %		Progress: 66.67 %		Progress: 66.98 %		Progress: 67.29 %		Progress: 67.61 %		Progress: 67.92 %		Progress: 68.23 %		Progress: 68.54 %		Progress: 68.86 %		Progress: 69.17 %		Progress: 69.48 %		Progress: 69.80 %		Progress: 70.11 %		Progress: 70.42 %		Progress: 70.74 %		Progress: 71.05 %		Progress: 71.36 %		Progress: 71.67 %		Progress: 71.99 %		Progress: 72.30 %		Progress: 72.61 %		Progress: 72.93 %		Progress: 73.24 %		Progress: 73.55 %		Progress: 73.87 %		Progress: 74.18 %		Progress: 74.49 %		Progress: 74.80 %		Progress: 75.12 %		Progress: 75.43 %		Progress: 75.74 %		Progress: 76.06 %		Progress: 76.37 %		Progress: 76.68 %		Progress: 77.00 %		Progress: 77.31 %		Progress: 77.62 %		Progress: 77.93 %		Progress: 78.25 %		Progress: 78.56 %		Progress: 78.87 %		Progress: 79.19 %		Progress: 79.50 %		Progress: 79.81 %		Progress: 80.13 %		Progress: 80.44 %		Progress: 80.75 %		Progress: 81.06 %		Progress: 81.38 %		Progress: 81.69 %		Progress: 82.00 %		Progress: 82.32 %		Progress: 82.63 %		Progress: 82.94 %		Progress: 83.26 %		Progress: 83.57 %		Progress: 83.88 %		Progress: 84.19 %		Progress: 84.51 %		Progress: 84.82 %		Progress: 85.13 %		Progress: 85.45 %		Progress: 85.76 %		Progress: 86.07 %		Progress: 86.38 %		Progress: 86.70 %		Progress: 87.01 %		Progress: 87.32 %		Progress: 87.64 %		Progress: 87.95 %		Progress: 88.26 %		Progress: 88.58 %		Progress: 88.89 %		Progress: 89.20 %		Progress: 89.51 %		Progress: 89.83 %		Progress: 90.14 %		Progress: 90.45 %		Progress: 90.77 %		Progress: 91.08 %		Progress: 91.39 %		Progress: 91.71 %		Progress: 92.02 %		Progress: 92.33 %		Progress: 92.64 %		Progress: 92.96 %		Progress: 93.27 %		Progress: 93.58 %		Progress: 93.90 %		Progress: 94.21 %		Progress: 94.52 %		Progress: 94.84 %		Progress: 95.15 %		Progress: 95.46 %		Progress: 95.77 %		Progress: 96.09 %		Progress: 96.40 %		Progress: 96.71 %		Progress: 97.03 %		Progress: 97.34 %		Progress: 97.65 %		Progress: 97.97 %		Progress: 98.28 %		Progress: 98.59 %		Progress: 98.90 %		Progress: 99.22 %		Progress: 99.53 %		Progress: 99.84 %		Done calculation.			
+Progress: 0.31 %		
+Progress: 0.63 %		
+Progress: 0.94 %		
+Progress: 1.25 %		
+Progress: 1.56 %		
+Progress: 1.88 %		
+Progress: 2.19 %		
+Progress: 2.50 %		
+Progress: 2.82 %		
+Progress: 3.13 %		
+Progress: 3.44 %		
+Progress: 3.76 %		
+Progress: 4.07 %		
+Progress: 4.38 %		
+Progress: 4.69 %		
+Progress: 5.01 %		
+Progress: 5.32 %		
+Progress: 5.63 %		
+Progress: 5.95 %		
+Progress: 6.26 %		
+Progress: 6.57 %		
+Progress: 6.89 %		
+Progress: 7.20 %		
+Progress: 7.51 %		
+Progress: 7.82 %		
+Progress: 8.14 %		
+Progress: 8.45 %		
+Progress: 8.76 %		
+Progress: 9.08 %		
+Progress: 9.39 %		
+Progress: 9.70 %		
+Progress: 10.02 %		
+Progress: 10.33 %		
+Progress: 10.64 %		
+Progress: 10.95 %		
+Progress: 11.27 %		
+Progress: 11.58 %		
+Progress: 11.89 %		
+Progress: 12.21 %		
+Progress: 12.52 %		
+Progress: 12.83 %		
+Progress: 13.15 %		
+Progress: 13.46 %		
+Progress: 13.77 %		
+Progress: 14.08 %		
+Progress: 14.40 %		
+Progress: 14.71 %		
+Progress: 15.02 %		
+Progress: 15.34 %		
+Progress: 15.65 %		
+Progress: 15.96 %		
+Progress: 16.28 %		
+Progress: 16.59 %		
+Progress: 16.90 %		
+Progress: 17.21 %		
+Progress: 17.53 %		
+Progress: 17.84 %		
+Progress: 18.15 %		
+Progress: 18.47 %		
+Progress: 18.78 %		
+Progress: 19.09 %		
+Progress: 19.41 %		
+Progress: 19.72 %		
+Progress: 20.03 %		
+Progress: 20.34 %		
+Progress: 20.66 %		
+Progress: 20.97 %		
+Progress: 21.28 %		
+Progress: 21.60 %		
+Progress: 21.91 %		
+Progress: 22.22 %		
+Progress: 22.54 %		
+Progress: 22.85 %		
+Progress: 23.16 %		
+Progress: 23.47 %		
+Progress: 23.79 %		
+Progress: 24.10 %		
+Progress: 24.41 %		
+Progress: 24.73 %		
+Progress: 25.04 %		
+Progress: 25.35 %		
+Progress: 25.67 %		
+Progress: 25.98 %		
+Progress: 26.29 %		
+Progress: 26.60 %		
+Progress: 26.92 %		
+Progress: 27.23 %		
+Progress: 27.54 %		
+Progress: 27.86 %		
+Progress: 28.17 %		
+Progress: 28.48 %		
+Progress: 28.79 %		
+Progress: 29.11 %		
+Progress: 29.42 %		
+Progress: 29.73 %		
+Progress: 30.05 %		
+Progress: 30.36 %		
+Progress: 30.67 %		
+Progress: 30.99 %		
+Progress: 31.30 %		
+Progress: 31.61 %		
+Progress: 31.92 %		
+Progress: 32.24 %		
+Progress: 32.55 %		
+Progress: 32.86 %		
+Progress: 33.18 %		
+Progress: 33.49 %		
+Progress: 33.80 %		
+Progress: 34.12 %		
+Progress: 34.43 %		
+Progress: 34.74 %		
+Progress: 35.05 %		
+Progress: 35.37 %		
+Progress: 35.68 %		
+Progress: 35.99 %		
+Progress: 36.31 %		
+Progress: 36.62 %		
+Progress: 36.93 %		
+Progress: 37.25 %		
+Progress: 37.56 %		
+Progress: 37.87 %		
+Progress: 38.18 %		
+Progress: 38.50 %		
+Progress: 38.81 %		
+Progress: 39.12 %		
+Progress: 39.44 %		
+Progress: 39.75 %		
+Progress: 40.06 %		
+Progress: 40.38 %		
+Progress: 40.69 %		
+Progress: 41.00 %		
+Progress: 41.31 %		
+Progress: 41.63 %		
+Progress: 41.94 %		
+Progress: 42.25 %		
+Progress: 42.57 %		
+Progress: 42.88 %		
+Progress: 43.19 %		
+Progress: 43.51 %		
+Progress: 43.82 %		
+Progress: 44.13 %		
+Progress: 44.44 %		
+Progress: 44.76 %		
+Progress: 45.07 %		
+Progress: 45.38 %		
+Progress: 45.70 %		
+Progress: 46.01 %		
+Progress: 46.32 %		
+Progress: 46.64 %		
+Progress: 46.95 %		
+Progress: 47.26 %		
+Progress: 47.57 %		
+Progress: 47.89 %		
+Progress: 48.20 %		
+Progress: 48.51 %		
+Progress: 48.83 %		
+Progress: 49.14 %		
+Progress: 49.45 %		
+Progress: 49.77 %		
+Progress: 50.08 %		
+Progress: 50.39 %		
+Progress: 50.70 %		
+Progress: 51.02 %		
+Progress: 51.33 %		
+Progress: 51.64 %		
+Progress: 51.96 %		
+Progress: 52.27 %		
+Progress: 52.58 %		
+Progress: 52.90 %		
+Progress: 53.21 %		
+Progress: 53.52 %		
+Progress: 53.83 %		
+Progress: 54.15 %		
+Progress: 54.46 %		
+Progress: 54.77 %		
+Progress: 55.09 %		
+Progress: 55.40 %		
+Progress: 55.71 %		
+Progress: 56.03 %		
+Progress: 56.34 %		
+Progress: 56.65 %		
+Progress: 56.96 %		
+Progress: 57.28 %		
+Progress: 57.59 %		
+Progress: 57.90 %		
+Progress: 58.22 %		
+Progress: 58.53 %		
+Progress: 58.84 %		
+Progress: 59.15 %		
+Progress: 59.47 %		
+Progress: 59.78 %		
+Progress: 60.09 %		
+Progress: 60.41 %		
+Progress: 60.72 %		
+Progress: 61.03 %		
+Progress: 61.35 %		
+Progress: 61.66 %		
+Progress: 61.97 %		
+Progress: 62.28 %		
+Progress: 62.60 %		
+Progress: 62.91 %		
+Progress: 63.22 %		
+Progress: 63.54 %		
+Progress: 63.85 %		
+Progress: 64.16 %		
+Progress: 64.48 %		
+Progress: 64.79 %		
+Progress: 65.10 %		
+Progress: 65.41 %		
+Progress: 65.73 %		
+Progress: 66.04 %		
+Progress: 66.35 %		
+Progress: 66.67 %		
+Progress: 66.98 %		
+Progress: 67.29 %		
+Progress: 67.61 %		
+Progress: 67.92 %		
+Progress: 68.23 %		
+Progress: 68.54 %		
+Progress: 68.86 %		
+Progress: 69.17 %		
+Progress: 69.48 %		
+Progress: 69.80 %		
+Progress: 70.11 %		
+Progress: 70.42 %		
+Progress: 70.74 %		
+Progress: 71.05 %		
+Progress: 71.36 %		
+Progress: 71.67 %		
+Progress: 71.99 %		
+Progress: 72.30 %		
+Progress: 72.61 %		
+Progress: 72.93 %		
+Progress: 73.24 %		
+Progress: 73.55 %		
+Progress: 73.87 %		
+Progress: 74.18 %		
+Progress: 74.49 %		
+Progress: 74.80 %		
+Progress: 75.12 %		
+Progress: 75.43 %		
+Progress: 75.74 %		
+Progress: 76.06 %		
+Progress: 76.37 %		
+Progress: 76.68 %		
+Progress: 77.00 %		
+Progress: 77.31 %		
+Progress: 77.62 %		
+Progress: 77.93 %		
+Progress: 78.25 %		
+Progress: 78.56 %		
+Progress: 78.87 %		
+Progress: 79.19 %		
+Progress: 79.50 %		
+Progress: 79.81 %		
+Progress: 80.13 %		
+Progress: 80.44 %		
+Progress: 80.75 %		
+Progress: 81.06 %		
+Progress: 81.38 %		
+Progress: 81.69 %		
+Progress: 82.00 %		
+Progress: 82.32 %		
+Progress: 82.63 %		
+Progress: 82.94 %		
+Progress: 83.26 %		
+Progress: 83.57 %		
+Progress: 83.88 %		
+Progress: 84.19 %		
+Progress: 84.51 %		
+Progress: 84.82 %		
+Progress: 85.13 %		
+Progress: 85.45 %		
+Progress: 85.76 %		
+Progress: 86.07 %		
+Progress: 86.38 %		
+Progress: 86.70 %		
+Progress: 87.01 %		
+Progress: 87.32 %		
+Progress: 87.64 %		
+Progress: 87.95 %		
+Progress: 88.26 %		
+Progress: 88.58 %		
+Progress: 88.89 %		
+Progress: 89.20 %		
+Progress: 89.51 %		
+Progress: 89.83 %		
+Progress: 90.14 %		
+Progress: 90.45 %		
+Progress: 90.77 %		
+Progress: 91.08 %		
+Progress: 91.39 %		
+Progress: 91.71 %		
+Progress: 92.02 %		
+Progress: 92.33 %		
+Progress: 92.64 %		
+Progress: 92.96 %		
+Progress: 93.27 %		
+Progress: 93.58 %		
+Progress: 93.90 %		
+Progress: 94.21 %		
+Progress: 94.52 %		
+Progress: 94.84 %		
+Progress: 95.15 %		
+Progress: 95.46 %		
+Progress: 95.77 %		
+Progress: 96.09 %		
+Progress: 96.40 %		
+Progress: 96.71 %		
+Progress: 97.03 %		
+Progress: 97.34 %		
+Progress: 97.65 %		
+Progress: 97.97 %		
+Progress: 98.28 %		
+Progress: 98.59 %		
+Progress: 98.90 %		
+Progress: 99.22 %		
+Progress: 99.53 %		
+Progress: 99.84 %		
+Done calculation.			
 Collect data from workers.
 
 31944 transition dipole moments have been calculated.
@@ -189,11 +508,40 @@ std_max                           = 3.84
 Save data in DATA/DENSITY_DENSITY
 Save progress in restart file DATA/RESTART_2
 Start evaluation of integrals...
-Solved integrals: 130;  max value of batch: 8.25eV;  next tuple: 10 of 24Solved integrals: 260;  max value of batch: 6.41eV;  next tuple: 10 of 24Solved integrals: 390;  max value of batch: 4.09eV;  next tuple: 10 of 24Solved integrals: 520;  max value of batch: 3.13eV;  next tuple: 10 of 24Solved integrals: 650;  max value of batch: 2.80eV;  next tuple: 10 of 24Solved integrals: 780;  max value of batch: 2.68eV;  next tuple: 10 of 24Solved integrals: 910;  max value of batch: 3.05eV;  next tuple: 10 of 24Solved integrals: 1040;  max value of batch: 2.15eV;  next tuple: 10 of 24Solved integrals: 1170;  max value of batch: 1.99eV;  next tuple: 10 of 24Solved integrals: 1300;  max value of batch: 1.96eV;  next tuple: 10 of 24Solved integrals: 1430;  max value of batch: 1.93eV;  next tuple: 10 of 24Solved integrals: 1560;  max value of batch: 8.23eV;  next tuple: 19 of 24Solved integrals: 1690;  max value of batch: 4.10eV;  next tuple: 19 of 24Solved integrals: 1820;  max value of batch: 6.40eV;  next tuple: 19 of 24Solved integrals: 1950;  max value of batch: 3.71eV;  next tuple: 19 of 24Solved integrals: 2080;  max value of batch: 3.05eV;  next tuple: 19 of 24Solved integrals: 2210;  max value of batch: 6.40eV;  next tuple: 20 of 24Solved integrals: 2340;  max value of batch: 3.05eV;  next tuple: 20 of 24Solved integrals: 2470;  max value of batch: 3.71eV;  next tuple: 20 of 24Solved integrals: 2600;  max value of batch: 3.05eV;  next tuple: 20 of 24Solved integrals: 2730;  max value of batch: 2.68eV;  next tuple: 20 of 24Solved integrals: 2860;  max value of batch: 1.84eV;  next tuple: 20 of 24Solved integrals: 2990;  max value of batch: 8.25eV;  next tuple: 22 of 24Solved integrals: 3120;  max value of batch: 3.13eV;  next tuple: 22 of 24Solved integrals: 3250;  max value of batch: 3.13eV;  next tuple: 22 of 24Solved integrals: 3380;  max value of batch: 2.92eV;  next tuple: 22 of 24Solved integrals: 3510;  max value of batch: 1.91eV;  next tuple: 22 of 24Solved integrals: 3640;  max value of batch: 1.96eV;  next tuple: 0 of 24
+
+Solved integrals: 130;  max value of batch: 8.25eV;  next tuple: 10 of 24
+Solved integrals: 260;  max value of batch: 6.41eV;  next tuple: 10 of 24
+Solved integrals: 390;  max value of batch: 4.09eV;  next tuple: 10 of 24
+Solved integrals: 520;  max value of batch: 3.13eV;  next tuple: 10 of 24
+Solved integrals: 650;  max value of batch: 2.80eV;  next tuple: 10 of 24
+Solved integrals: 780;  max value of batch: 2.68eV;  next tuple: 10 of 24
+Solved integrals: 910;  max value of batch: 3.05eV;  next tuple: 10 of 24
+Solved integrals: 1040;  max value of batch: 2.15eV;  next tuple: 10 of 24
+Solved integrals: 1170;  max value of batch: 1.99eV;  next tuple: 10 of 24
+Solved integrals: 1300;  max value of batch: 1.96eV;  next tuple: 10 of 24
+Solved integrals: 1430;  max value of batch: 1.93eV;  next tuple: 10 of 24
+Solved integrals: 1560;  max value of batch: 8.23eV;  next tuple: 19 of 24
+Solved integrals: 1690;  max value of batch: 4.10eV;  next tuple: 19 of 24
+Solved integrals: 1820;  max value of batch: 6.40eV;  next tuple: 19 of 24
+Solved integrals: 1950;  max value of batch: 3.71eV;  next tuple: 19 of 24
+Solved integrals: 2080;  max value of batch: 3.05eV;  next tuple: 19 of 24
+Solved integrals: 2210;  max value of batch: 6.40eV;  next tuple: 20 of 24
+Solved integrals: 2340;  max value of batch: 3.05eV;  next tuple: 20 of 24
+Solved integrals: 2470;  max value of batch: 3.71eV;  next tuple: 20 of 24
+Solved integrals: 2600;  max value of batch: 3.05eV;  next tuple: 20 of 24
+Solved integrals: 2730;  max value of batch: 2.68eV;  next tuple: 20 of 24
+Solved integrals: 2860;  max value of batch: 1.84eV;  next tuple: 20 of 24
+Solved integrals: 2990;  max value of batch: 8.25eV;  next tuple: 22 of 24
+Solved integrals: 3120;  max value of batch: 3.13eV;  next tuple: 22 of 24
+Solved integrals: 3250;  max value of batch: 3.13eV;  next tuple: 22 of 24
+Solved integrals: 3380;  max value of batch: 2.92eV;  next tuple: 22 of 24
+Solved integrals: 3510;  max value of batch: 1.91eV;  next tuple: 22 of 24
+Solved integrals: 3640;  max value of batch: 1.96eV;  next tuple: 0 of 24
 First phase finished.
 --> electron-hole distances larger 8.65A will be approximated with monopole-monopole approx.
 Start second phase of the scheduler...
-Solved integrals: 3656 of 16 (22850.00%);  max value of batch: 2.08eV
+
+Solved integrals: 3656 of 16 (22850.00%);  max value of batch: 2.08eV
 Calculation finished.
 Terminate all workers.
 Calculate Yukawa integrals for model screening...
@@ -203,7 +551,36 @@ Calculating list of integrals from previous scheduler...
 Save data in DATA/DENSITY_DENSITY_YUK_11.680000_1.563000
 Save progress in restart file DATA/RESTART_2_YUK_11.680000_1.563000
 Start evaluation of integrals...
-Solved integrals: 130 of 3656 (3.56%);  max value of batch: 0.44eVSolved integrals: 260 of 3656 (7.11%);  max value of batch: 1.12eVSolved integrals: 390 of 3656 (10.67%);  max value of batch: 0.44eVSolved integrals: 520 of 3656 (14.22%);  max value of batch: 1.13eVSolved integrals: 650 of 3656 (17.78%);  max value of batch: 0.44eVSolved integrals: 780 of 3656 (21.33%);  max value of batch: 0.22eVSolved integrals: 910 of 3656 (24.89%);  max value of batch: 0.46eVSolved integrals: 1040 of 3656 (28.45%);  max value of batch: 1.12eVSolved integrals: 1170 of 3656 (32.00%);  max value of batch: 1.13eVSolved integrals: 1300 of 3656 (35.56%);  max value of batch: 1.12eVSolved integrals: 1430 of 3656 (39.11%);  max value of batch: 0.08eVSolved integrals: 1560 of 3656 (42.67%);  max value of batch: 0.44eVSolved integrals: 1690 of 3656 (46.23%);  max value of batch: 1.12eVSolved integrals: 1820 of 3656 (49.78%);  max value of batch: 0.22eVSolved integrals: 1950 of 3656 (53.34%);  max value of batch: 1.12eVSolved integrals: 2080 of 3656 (56.89%);  max value of batch: 0.45eVSolved integrals: 2210 of 3656 (60.45%);  max value of batch: 1.12eVSolved integrals: 2340 of 3656 (64.00%);  max value of batch: 0.22eVSolved integrals: 2470 of 3656 (67.56%);  max value of batch: 0.44eVSolved integrals: 2600 of 3656 (71.12%);  max value of batch: 0.44eVSolved integrals: 2730 of 3656 (74.67%);  max value of batch: 1.12eVSolved integrals: 2860 of 3656 (78.23%);  max value of batch: 1.12eVSolved integrals: 2990 of 3656 (81.78%);  max value of batch: 0.44eVSolved integrals: 3120 of 3656 (85.34%);  max value of batch: 1.12eVSolved integrals: 3250 of 3656 (88.89%);  max value of batch: 0.05eVSolved integrals: 3380 of 3656 (92.45%);  max value of batch: 0.44eVSolved integrals: 3510 of 3656 (96.01%);  max value of batch: 0.44eVSolved integrals: 3640 of 3656 (99.56%);  max value of batch: 1.13eVSolved integrals: 3656 of 3656 (100.00%);  max value of batch: 0.00eV
+
+Solved integrals: 130 of 3656 (3.56%);  max value of batch: 0.44eV
+Solved integrals: 260 of 3656 (7.11%);  max value of batch: 1.12eV
+Solved integrals: 390 of 3656 (10.67%);  max value of batch: 0.44eV
+Solved integrals: 520 of 3656 (14.22%);  max value of batch: 1.13eV
+Solved integrals: 650 of 3656 (17.78%);  max value of batch: 0.44eV
+Solved integrals: 780 of 3656 (21.33%);  max value of batch: 0.22eV
+Solved integrals: 910 of 3656 (24.89%);  max value of batch: 0.46eV
+Solved integrals: 1040 of 3656 (28.45%);  max value of batch: 1.12eV
+Solved integrals: 1170 of 3656 (32.00%);  max value of batch: 1.13eV
+Solved integrals: 1300 of 3656 (35.56%);  max value of batch: 1.12eV
+Solved integrals: 1430 of 3656 (39.11%);  max value of batch: 0.08eV
+Solved integrals: 1560 of 3656 (42.67%);  max value of batch: 0.44eV
+Solved integrals: 1690 of 3656 (46.23%);  max value of batch: 1.12eV
+Solved integrals: 1820 of 3656 (49.78%);  max value of batch: 0.22eV
+Solved integrals: 1950 of 3656 (53.34%);  max value of batch: 1.12eV
+Solved integrals: 2080 of 3656 (56.89%);  max value of batch: 0.45eV
+Solved integrals: 2210 of 3656 (60.45%);  max value of batch: 1.12eV
+Solved integrals: 2340 of 3656 (64.00%);  max value of batch: 0.22eV
+Solved integrals: 2470 of 3656 (67.56%);  max value of batch: 0.44eV
+Solved integrals: 2600 of 3656 (71.12%);  max value of batch: 0.44eV
+Solved integrals: 2730 of 3656 (74.67%);  max value of batch: 1.12eV
+Solved integrals: 2860 of 3656 (78.23%);  max value of batch: 1.12eV
+Solved integrals: 2990 of 3656 (81.78%);  max value of batch: 0.44eV
+Solved integrals: 3120 of 3656 (85.34%);  max value of batch: 1.12eV
+Solved integrals: 3250 of 3656 (88.89%);  max value of batch: 0.05eV
+Solved integrals: 3380 of 3656 (92.45%);  max value of batch: 0.44eV
+Solved integrals: 3510 of 3656 (96.01%);  max value of batch: 0.44eV
+Solved integrals: 3640 of 3656 (99.56%);  max value of batch: 1.13eV
+Solved integrals: 3656 of 3656 (100.00%);  max value of batch: 0.00eV
 Calculation finished.
 Terminate all workers.
 Create superposition of Coulomb and Yukawa integrals...
@@ -234,7 +611,137 @@ tuples.size() = 183
 Save data in DATA/LOCALFIELDEFFECTS
 Save progress in restart file DATA/RESTART_LFE
 Start evaluation of integrals...
-Solved integrals: 245;  max value of batch: 0.00eV;  next tuple: 18 of 183Solved integrals: 502;  max value of batch: 0.00eV;  next tuple: 27 of 183Solved integrals: 754;  max value of batch: 0.00eV;  next tuple: 32 of 183Solved integrals: 1013;  max value of batch: 0.00eV;  next tuple: 36 of 183Solved integrals: 1268;  max value of batch: 0.00eV;  next tuple: 41 of 183Solved integrals: 1524;  max value of batch: 0.00eV;  next tuple: 44 of 183Solved integrals: 1783;  max value of batch: 0.00eV;  next tuple: 46 of 183Solved integrals: 2039;  max value of batch: 0.00eV;  next tuple: 51 of 183Solved integrals: 2296;  max value of batch: 0.00eV;  next tuple: 53 of 183Solved integrals: 2554;  max value of batch: 0.00eV;  next tuple: 54 of 183Solved integrals: 2811;  max value of batch: 0.00eV;  next tuple: 57 of 183Solved integrals: 3068;  max value of batch: 0.00eV;  next tuple: 62 of 183Solved integrals: 3327;  max value of batch: 0.00eV;  next tuple: 63 of 183Solved integrals: 3586;  max value of batch: 0.00eV;  next tuple: 63 of 183Solved integrals: 3843;  max value of batch: 0.00eV;  next tuple: 66 of 183Solved integrals: 4098;  max value of batch: 0.00eV;  next tuple: 71 of 183Solved integrals: 4357;  max value of batch: 0.00eV;  next tuple: 72 of 183Solved integrals: 4617;  max value of batch: 0.00eV;  next tuple: 73 of 183Solved integrals: 4877;  max value of batch: 0.00eV;  next tuple: 73 of 183Solved integrals: 5134;  max value of batch: 0.00eV;  next tuple: 75 of 183Solved integrals: 5389;  max value of batch: 0.00eV;  next tuple: 81 of 183Solved integrals: 5648;  max value of batch: 0.00eV;  next tuple: 81 of 183Solved integrals: 5908;  max value of batch: 0.00eV;  next tuple: 82 of 183Solved integrals: 6167;  max value of batch: 0.00eV;  next tuple: 83 of 183Solved integrals: 6427;  max value of batch: 0.00eV;  next tuple: 83 of 183Solved integrals: 6685;  max value of batch: 0.00eV;  next tuple: 85 of 183Solved integrals: 6939;  max value of batch: 0.00eV;  next tuple: 89 of 183Solved integrals: 7198;  max value of batch: 0.00eV;  next tuple: 91 of 183Solved integrals: 7458;  max value of batch: 0.00eV;  next tuple: 92 of 183Solved integrals: 7717;  max value of batch: 0.00eV;  next tuple: 93 of 183Solved integrals: 7977;  max value of batch: 0.00eV;  next tuple: 93 of 183Solved integrals: 8235;  max value of batch: 0.00eV;  next tuple: 95 of 183Solved integrals: 8493;  max value of batch: 0.00eV;  next tuple: 96 of 183Solved integrals: 8749;  max value of batch: 0.00eV;  next tuple: 99 of 183Solved integrals: 9008;  max value of batch: 0.00eV;  next tuple: 101 of 183Solved integrals: 9268;  max value of batch: 0.00eV;  next tuple: 102 of 183Solved integrals: 9527;  max value of batch: 0.00eV;  next tuple: 102 of 183Solved integrals: 9787;  max value of batch: 0.00eV;  next tuple: 103 of 183Solved integrals: 10045;  max value of batch: 0.00eV;  next tuple: 103 of 183Solved integrals: 10304;  max value of batch: 0.00eV;  next tuple: 105 of 183Solved integrals: 10561;  max value of batch: 0.00eV;  next tuple: 108 of 183Solved integrals: 10819;  max value of batch: 0.00eV;  next tuple: 111 of 183Solved integrals: 11078;  max value of batch: 0.00eV;  next tuple: 111 of 183Solved integrals: 11338;  max value of batch: 0.00eV;  next tuple: 112 of 183Solved integrals: 11598;  max value of batch: 0.00eV;  next tuple: 112 of 183Solved integrals: 11857;  max value of batch: 0.00eV;  next tuple: 113 of 183Solved integrals: 12116;  max value of batch: 0.00eV;  next tuple: 113 of 183Solved integrals: 12374;  max value of batch: 0.00eV;  next tuple: 115 of 183Solved integrals: 12632;  max value of batch: 0.00eV;  next tuple: 118 of 183Solved integrals: 12889;  max value of batch: 0.00eV;  next tuple: 120 of 183Solved integrals: 13149;  max value of batch: 0.00eV;  next tuple: 121 of 183Solved integrals: 13408;  max value of batch: 0.00eV;  next tuple: 121 of 183Solved integrals: 13668;  max value of batch: 0.00eV;  next tuple: 122 of 183Solved integrals: 13928;  max value of batch: 0.00eV;  next tuple: 122 of 183Solved integrals: 14187;  max value of batch: 0.00eV;  next tuple: 123 of 183Solved integrals: 14446;  max value of batch: 0.00eV;  next tuple: 124 of 183Solved integrals: 14704;  max value of batch: 0.00eV;  next tuple: 126 of 183Solved integrals: 14962;  max value of batch: 0.00eV;  next tuple: 126 of 183Solved integrals: 15219;  max value of batch: 0.00eV;  next tuple: 130 of 183Solved integrals: 15479;  max value of batch: 0.00eV;  next tuple: 131 of 183Solved integrals: 15739;  max value of batch: 0.00eV;  next tuple: 131 of 183Solved integrals: 15998;  max value of batch: 0.00eV;  next tuple: 132 of 183Solved integrals: 16258;  max value of batch: 0.00eV;  next tuple: 132 of 183Solved integrals: 16518;  max value of batch: 0.00eV;  next tuple: 132 of 183Solved integrals: 16777;  max value of batch: 0.00eV;  next tuple: 133 of 183Solved integrals: 17035;  max value of batch: 0.00eV;  next tuple: 134 of 183Solved integrals: 17294;  max value of batch: 0.00eV;  next tuple: 136 of 183Solved integrals: 17552;  max value of batch: 0.00eV;  next tuple: 138 of 183Solved integrals: 17809;  max value of batch: 0.00eV;  next tuple: 140 of 183Solved integrals: 18069;  max value of batch: 0.00eV;  next tuple: 141 of 183Solved integrals: 18329;  max value of batch: 0.00eV;  next tuple: 141 of 183Solved integrals: 18588;  max value of batch: 0.00eV;  next tuple: 142 of 183Solved integrals: 18848;  max value of batch: 0.00eV;  next tuple: 142 of 183Solved integrals: 19108;  max value of batch: 0.00eV;  next tuple: 142 of 183Solved integrals: 19367;  max value of batch: 0.00eV;  next tuple: 143 of 183Solved integrals: 19625;  max value of batch: 0.00eV;  next tuple: 144 of 183Solved integrals: 19884;  max value of batch: 0.00eV;  next tuple: 146 of 183Solved integrals: 20143;  max value of batch: 0.00eV;  next tuple: 147 of 183Solved integrals: 20402;  max value of batch: 0.00eV;  next tuple: 147 of 183Solved integrals: 20660;  max value of batch: 0.00eV;  next tuple: 150 of 183Solved integrals: 20919;  max value of batch: 0.00eV;  next tuple: 151 of 183Solved integrals: 21179;  max value of batch: 0.00eV;  next tuple: 151 of 183Solved integrals: 21438;  max value of batch: 0.00eV;  next tuple: 152 of 183Solved integrals: 21698;  max value of batch: 0.00eV;  next tuple: 152 of 183Solved integrals: 21958;  max value of batch: 0.00eV;  next tuple: 152 of 183Solved integrals: 22217;  max value of batch: 0.00eV;  next tuple: 153 of 183Solved integrals: 22475;  max value of batch: 0.00eV;  next tuple: 155 of 183Solved integrals: 22734;  max value of batch: 0.00eV;  next tuple: 156 of 183Solved integrals: 22993;  max value of batch: 0.00eV;  next tuple: 156 of 183Solved integrals: 23253;  max value of batch: 0.00eV;  next tuple: 157 of 183Solved integrals: 23512;  max value of batch: 0.00eV;  next tuple: 158 of 183Solved integrals: 23769;  max value of batch: 0.00eV;  next tuple: 161 of 183Solved integrals: 24029;  max value of batch: 0.00eV;  next tuple: 161 of 183Solved integrals: 24288;  max value of batch: 0.00eV;  next tuple: 162 of 183Solved integrals: 24548;  max value of batch: 0.00eV;  next tuple: 162 of 183Solved integrals: 24808;  max value of batch: 0.00eV;  next tuple: 162 of 183Solved integrals: 25068;  max value of batch: 0.00eV;  next tuple: 162 of 183Solved integrals: 25327;  max value of batch: 0.00eV;  next tuple: 162 of 183Solved integrals: 25584;  max value of batch: 0.00eV;  next tuple: 164 of 183Solved integrals: 25844;  max value of batch: 0.00eV;  next tuple: 166 of 183Solved integrals: 26104;  max value of batch: 0.00eV;  next tuple: 166 of 183Solved integrals: 26363;  max value of batch: 0.00eV;  next tuple: 167 of 183Solved integrals: 26621;  max value of batch: 0.00eV;  next tuple: 168 of 183Solved integrals: 26879;  max value of batch: 0.00eV;  next tuple: 171 of 183Solved integrals: 27139;  max value of batch: 0.00eV;  next tuple: 171 of 183Solved integrals: 27398;  max value of batch: 0.00eV;  next tuple: 172 of 183Solved integrals: 27658;  max value of batch: 0.00eV;  next tuple: 172 of 183Solved integrals: 27918;  max value of batch: 0.00eV;  next tuple: 172 of 183Solved integrals: 28178;  max value of batch: 0.00eV;  next tuple: 172 of 183Solved integrals: 28438;  max value of batch: 0.00eV;  next tuple: 172 of 183Solved integrals: 28697;  max value of batch: 0.00eV;  next tuple: 173 of 183Solved integrals: 28954;  max value of batch: 0.00eV;  next tuple: 175 of 183Solved integrals: 29214;  max value of batch: 0.00eV;  next tuple: 176 of 183Solved integrals: 29473;  max value of batch: 0.00eV;  next tuple: 176 of 183Solved integrals: 29733;  max value of batch: 0.00eV;  next tuple: 177 of 183Solved integrals: 29992;  max value of batch: 0.00eV;  next tuple: 178 of 183Solved integrals: 30249;  max value of batch: 0.00eV;  next tuple: 180 of 183Solved integrals: 30509;  max value of batch: 0.00eV;  next tuple: 181 of 183Solved integrals: 30768;  max value of batch: 0.00eV;  next tuple: 182 of 183Solved integrals: 31028;  max value of batch: 0.00eV;  next tuple: 182 of 183Solved integrals: 31288;  max value of batch: 0.00eV;  next tuple: 182 of 183Solved integrals: 31548;  max value of batch: 0.00eV;  next tuple: 182 of 183Solved integrals: 31808;  max value of batch: 0.00eV;  next tuple: 182 of 183Solved integrals: 32067;  max value of batch: 0.00eV;  next tuple: 182 of 183Solved integrals: 32325;  max value of batch: 0.00eV;  next tuple: 176 of 183Solved integrals: 32584;  max value of batch: 0.00eV;  next tuple: 178 of 183Solved integrals: 32842;  max value of batch: 0.00eV;  next tuple: 180 of 183Solved integrals: 33101;  max value of batch: 0.00eV;  next tuple: 0 of 183Solved integrals: 33358;  max value of batch: 0.00eV;  next tuple: 0 of 183Solved integrals: 33489;  max value of batch: 0.00eV;  next tuple: 0 of 183
+
+Solved integrals: 245;  max value of batch: 0.00eV;  next tuple: 18 of 183
+Solved integrals: 502;  max value of batch: 0.00eV;  next tuple: 27 of 183
+Solved integrals: 754;  max value of batch: 0.00eV;  next tuple: 32 of 183
+Solved integrals: 1013;  max value of batch: 0.00eV;  next tuple: 36 of 183
+Solved integrals: 1268;  max value of batch: 0.00eV;  next tuple: 41 of 183
+Solved integrals: 1524;  max value of batch: 0.00eV;  next tuple: 44 of 183
+Solved integrals: 1783;  max value of batch: 0.00eV;  next tuple: 46 of 183
+Solved integrals: 2039;  max value of batch: 0.00eV;  next tuple: 51 of 183
+Solved integrals: 2296;  max value of batch: 0.00eV;  next tuple: 53 of 183
+Solved integrals: 2554;  max value of batch: 0.00eV;  next tuple: 54 of 183
+Solved integrals: 2811;  max value of batch: 0.00eV;  next tuple: 57 of 183
+Solved integrals: 3068;  max value of batch: 0.00eV;  next tuple: 62 of 183
+Solved integrals: 3327;  max value of batch: 0.00eV;  next tuple: 63 of 183
+Solved integrals: 3586;  max value of batch: 0.00eV;  next tuple: 63 of 183
+Solved integrals: 3843;  max value of batch: 0.00eV;  next tuple: 66 of 183
+Solved integrals: 4098;  max value of batch: 0.00eV;  next tuple: 71 of 183
+Solved integrals: 4357;  max value of batch: 0.00eV;  next tuple: 72 of 183
+Solved integrals: 4617;  max value of batch: 0.00eV;  next tuple: 73 of 183
+Solved integrals: 4877;  max value of batch: 0.00eV;  next tuple: 73 of 183
+Solved integrals: 5134;  max value of batch: 0.00eV;  next tuple: 75 of 183
+Solved integrals: 5389;  max value of batch: 0.00eV;  next tuple: 81 of 183
+Solved integrals: 5648;  max value of batch: 0.00eV;  next tuple: 81 of 183
+Solved integrals: 5908;  max value of batch: 0.00eV;  next tuple: 82 of 183
+Solved integrals: 6167;  max value of batch: 0.00eV;  next tuple: 83 of 183
+Solved integrals: 6427;  max value of batch: 0.00eV;  next tuple: 83 of 183
+Solved integrals: 6685;  max value of batch: 0.00eV;  next tuple: 85 of 183
+Solved integrals: 6939;  max value of batch: 0.00eV;  next tuple: 89 of 183
+Solved integrals: 7198;  max value of batch: 0.00eV;  next tuple: 91 of 183
+Solved integrals: 7458;  max value of batch: 0.00eV;  next tuple: 92 of 183
+Solved integrals: 7717;  max value of batch: 0.00eV;  next tuple: 93 of 183
+Solved integrals: 7977;  max value of batch: 0.00eV;  next tuple: 93 of 183
+Solved integrals: 8235;  max value of batch: 0.00eV;  next tuple: 95 of 183
+Solved integrals: 8493;  max value of batch: 0.00eV;  next tuple: 96 of 183
+Solved integrals: 8749;  max value of batch: 0.00eV;  next tuple: 99 of 183
+Solved integrals: 9008;  max value of batch: 0.00eV;  next tuple: 101 of 183
+Solved integrals: 9268;  max value of batch: 0.00eV;  next tuple: 102 of 183
+Solved integrals: 9527;  max value of batch: 0.00eV;  next tuple: 102 of 183
+Solved integrals: 9787;  max value of batch: 0.00eV;  next tuple: 103 of 183
+Solved integrals: 10045;  max value of batch: 0.00eV;  next tuple: 103 of 183
+Solved integrals: 10304;  max value of batch: 0.00eV;  next tuple: 105 of 183
+Solved integrals: 10561;  max value of batch: 0.00eV;  next tuple: 108 of 183
+Solved integrals: 10819;  max value of batch: 0.00eV;  next tuple: 111 of 183
+Solved integrals: 11078;  max value of batch: 0.00eV;  next tuple: 111 of 183
+Solved integrals: 11338;  max value of batch: 0.00eV;  next tuple: 112 of 183
+Solved integrals: 11598;  max value of batch: 0.00eV;  next tuple: 112 of 183
+Solved integrals: 11857;  max value of batch: 0.00eV;  next tuple: 113 of 183
+Solved integrals: 12116;  max value of batch: 0.00eV;  next tuple: 113 of 183
+Solved integrals: 12374;  max value of batch: 0.00eV;  next tuple: 115 of 183
+Solved integrals: 12632;  max value of batch: 0.00eV;  next tuple: 118 of 183
+Solved integrals: 12889;  max value of batch: 0.00eV;  next tuple: 120 of 183
+Solved integrals: 13149;  max value of batch: 0.00eV;  next tuple: 121 of 183
+Solved integrals: 13408;  max value of batch: 0.00eV;  next tuple: 121 of 183
+Solved integrals: 13668;  max value of batch: 0.00eV;  next tuple: 122 of 183
+Solved integrals: 13928;  max value of batch: 0.00eV;  next tuple: 122 of 183
+Solved integrals: 14187;  max value of batch: 0.00eV;  next tuple: 123 of 183
+Solved integrals: 14446;  max value of batch: 0.00eV;  next tuple: 124 of 183
+Solved integrals: 14704;  max value of batch: 0.00eV;  next tuple: 126 of 183
+Solved integrals: 14962;  max value of batch: 0.00eV;  next tuple: 126 of 183
+Solved integrals: 15219;  max value of batch: 0.00eV;  next tuple: 130 of 183
+Solved integrals: 15479;  max value of batch: 0.00eV;  next tuple: 131 of 183
+Solved integrals: 15739;  max value of batch: 0.00eV;  next tuple: 131 of 183
+Solved integrals: 15998;  max value of batch: 0.00eV;  next tuple: 132 of 183
+Solved integrals: 16258;  max value of batch: 0.00eV;  next tuple: 132 of 183
+Solved integrals: 16518;  max value of batch: 0.00eV;  next tuple: 132 of 183
+Solved integrals: 16777;  max value of batch: 0.00eV;  next tuple: 133 of 183
+Solved integrals: 17035;  max value of batch: 0.00eV;  next tuple: 134 of 183
+Solved integrals: 17294;  max value of batch: 0.00eV;  next tuple: 136 of 183
+Solved integrals: 17552;  max value of batch: 0.00eV;  next tuple: 138 of 183
+Solved integrals: 17809;  max value of batch: 0.00eV;  next tuple: 140 of 183
+Solved integrals: 18069;  max value of batch: 0.00eV;  next tuple: 141 of 183
+Solved integrals: 18329;  max value of batch: 0.00eV;  next tuple: 141 of 183
+Solved integrals: 18588;  max value of batch: 0.00eV;  next tuple: 142 of 183
+Solved integrals: 18848;  max value of batch: 0.00eV;  next tuple: 142 of 183
+Solved integrals: 19108;  max value of batch: 0.00eV;  next tuple: 142 of 183
+Solved integrals: 19367;  max value of batch: 0.00eV;  next tuple: 143 of 183
+Solved integrals: 19625;  max value of batch: 0.00eV;  next tuple: 144 of 183
+Solved integrals: 19884;  max value of batch: 0.00eV;  next tuple: 146 of 183
+Solved integrals: 20143;  max value of batch: 0.00eV;  next tuple: 147 of 183
+Solved integrals: 20402;  max value of batch: 0.00eV;  next tuple: 147 of 183
+Solved integrals: 20660;  max value of batch: 0.00eV;  next tuple: 150 of 183
+Solved integrals: 20919;  max value of batch: 0.00eV;  next tuple: 151 of 183
+Solved integrals: 21179;  max value of batch: 0.00eV;  next tuple: 151 of 183
+Solved integrals: 21438;  max value of batch: 0.00eV;  next tuple: 152 of 183
+Solved integrals: 21698;  max value of batch: 0.00eV;  next tuple: 152 of 183
+Solved integrals: 21958;  max value of batch: 0.00eV;  next tuple: 152 of 183
+Solved integrals: 22217;  max value of batch: 0.00eV;  next tuple: 153 of 183
+Solved integrals: 22475;  max value of batch: 0.00eV;  next tuple: 155 of 183
+Solved integrals: 22734;  max value of batch: 0.00eV;  next tuple: 156 of 183
+Solved integrals: 22993;  max value of batch: 0.00eV;  next tuple: 156 of 183
+Solved integrals: 23253;  max value of batch: 0.00eV;  next tuple: 157 of 183
+Solved integrals: 23512;  max value of batch: 0.00eV;  next tuple: 158 of 183
+Solved integrals: 23769;  max value of batch: 0.00eV;  next tuple: 161 of 183
+Solved integrals: 24029;  max value of batch: 0.00eV;  next tuple: 161 of 183
+Solved integrals: 24288;  max value of batch: 0.00eV;  next tuple: 162 of 183
+Solved integrals: 24548;  max value of batch: 0.00eV;  next tuple: 162 of 183
+Solved integrals: 24808;  max value of batch: 0.00eV;  next tuple: 162 of 183
+Solved integrals: 25068;  max value of batch: 0.00eV;  next tuple: 162 of 183
+Solved integrals: 25327;  max value of batch: 0.00eV;  next tuple: 162 of 183
+Solved integrals: 25584;  max value of batch: 0.00eV;  next tuple: 164 of 183
+Solved integrals: 25844;  max value of batch: 0.00eV;  next tuple: 166 of 183
+Solved integrals: 26104;  max value of batch: 0.00eV;  next tuple: 166 of 183
+Solved integrals: 26363;  max value of batch: 0.00eV;  next tuple: 167 of 183
+Solved integrals: 26621;  max value of batch: 0.00eV;  next tuple: 168 of 183
+Solved integrals: 26879;  max value of batch: 0.00eV;  next tuple: 171 of 183
+Solved integrals: 27139;  max value of batch: 0.00eV;  next tuple: 171 of 183
+Solved integrals: 27398;  max value of batch: 0.00eV;  next tuple: 172 of 183
+Solved integrals: 27658;  max value of batch: 0.00eV;  next tuple: 172 of 183
+Solved integrals: 27918;  max value of batch: 0.00eV;  next tuple: 172 of 183
+Solved integrals: 28178;  max value of batch: 0.00eV;  next tuple: 172 of 183
+Solved integrals: 28438;  max value of batch: 0.00eV;  next tuple: 172 of 183
+Solved integrals: 28697;  max value of batch: 0.00eV;  next tuple: 173 of 183
+Solved integrals: 28954;  max value of batch: 0.00eV;  next tuple: 175 of 183
+Solved integrals: 29214;  max value of batch: 0.00eV;  next tuple: 176 of 183
+Solved integrals: 29473;  max value of batch: 0.00eV;  next tuple: 176 of 183
+Solved integrals: 29733;  max value of batch: 0.00eV;  next tuple: 177 of 183
+Solved integrals: 29992;  max value of batch: 0.00eV;  next tuple: 178 of 183
+Solved integrals: 30249;  max value of batch: 0.00eV;  next tuple: 180 of 183
+Solved integrals: 30509;  max value of batch: 0.00eV;  next tuple: 181 of 183
+Solved integrals: 30768;  max value of batch: 0.00eV;  next tuple: 182 of 183
+Solved integrals: 31028;  max value of batch: 0.00eV;  next tuple: 182 of 183
+Solved integrals: 31288;  max value of batch: 0.00eV;  next tuple: 182 of 183
+Solved integrals: 31548;  max value of batch: 0.00eV;  next tuple: 182 of 183
+Solved integrals: 31808;  max value of batch: 0.00eV;  next tuple: 182 of 183
+Solved integrals: 32067;  max value of batch: 0.00eV;  next tuple: 182 of 183
+Solved integrals: 32325;  max value of batch: 0.00eV;  next tuple: 176 of 183
+Solved integrals: 32584;  max value of batch: 0.00eV;  next tuple: 178 of 183
+Solved integrals: 32842;  max value of batch: 0.00eV;  next tuple: 180 of 183
+Solved integrals: 33101;  max value of batch: 0.00eV;  next tuple: 0 of 183
+Solved integrals: 33358;  max value of batch: 0.00eV;  next tuple: 0 of 183
+Solved integrals: 33489;  max value of batch: 0.00eV;  next tuple: 0 of 183
 Calculation finished.
 Terminate all workers.
 

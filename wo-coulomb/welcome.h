@@ -33,7 +33,7 @@ const string banner =  "\
     cout << "\ncompiled from git commit:  " << git_commit << " on " << compile_date << " at " << compile_time << "\n";
     cout << banner;
     //cout << "                                                                                         version "<< VERSION << "\n\n\n";
-    cout << "\nCitation:\tMerkel, K. & Ortmann, F. Journal of Physics: Materials 7, 015001 (2023)\n";
+    cout << "\nCitation:\tMerkel, K. & Ortmann, F. Journal of Physics: Materials 7, 015001 (2024)\n";
     cout << "         \thttps://dx.doi.org/10.1088/2515-7639/ad06cd\n\n\n";
 }
 

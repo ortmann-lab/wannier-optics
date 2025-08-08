@@ -3,7 +3,7 @@
 In this tutorial we want to perform a model calculation of a Wannier exciton without using wannier90. This model can also be used as an implementation test since we can calculate the excitation energies analytically. With this tutorial you learn how the input files of `wo-optics.x` work and how to setup individual models manually.
 
 The following steps are also described in appendix of
-Merkel, K. & Ortmann, F. Journal of Physics: Materials 7, 015001 (2023)
+Merkel, K. & Ortmann, F. Journal of Physics: Materials 7, 015001 (2024)
 
 *Please note that the name Wannier optics comes from the fact that we are using Wannier functions. It is not at all related to the type of exciton. In fact, using Wannier optics you can calculate all kinds of excitons, e.g. Frenkel excitions.*
 
@@ -78,7 +78,7 @@ $$
 
 Now, we want to use `wo-optics.x` to calculate the exciton excitation energies numerically. That means we only want to calculate the **exciton density of states** from which we can obtain the Rydberg series. We don't need to calculate any optical spectra.
 
-The program creates the exciton Hamiltonian according to Eq.(12) in J. Phys. Mater. 7, 015001 (2023). The first step is to tell `wo-optics.x` the tight-binding model and Coulomb interaction. For this we want to use the following model parameters:
+The program creates the exciton Hamiltonian according to Eq.(12) in J. Phys. Mater. 7, 015001 (2024). The first step is to tell `wo-optics.x` the tight-binding model and Coulomb interaction. For this we want to use the following model parameters:
 $$
 t_\text{el} = -1.0 \text{ eV, }~
 t_\text{h} = 1.0 \text{ eV, }~
@@ -174,7 +174,7 @@ At this stage we have set the single particle tight-binding models for electrons
 
 
 ### Coulomb Interaction
-The interaction between electrons and hole consists of the Coulomb interaction and local field effects. They must be provided as a set of integrals according to Eq.(15) and Eq.(16) in J. Phys. Mater. 7, 015001 (2023). Usually we use the `wo-coulomb.x` program to calculate such lists of integrals. However, in this tutorial we don't need to.
+The interaction between electrons and hole consists of the Coulomb interaction and local field effects. They must be provided as a set of integrals according to Eq.(15) and Eq.(16) in J. Phys. Mater. 7, 015001 (2024). Usually we use the `wo-coulomb.x` program to calculate such lists of integrals. However, in this tutorial we don't need to.
 
 **COULOMB**
 

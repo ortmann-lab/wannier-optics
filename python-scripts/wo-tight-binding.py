@@ -2,7 +2,7 @@
 """
 Imports tight-binding model from wannier90 (wannier90_hr.dat) and generates wannier-optics input files (POSFILE, TINFILE, ONSITE_ENERGY).
 
-Citation: Merkel, K. & Ortmann, F. Journal of Physics: Materials 7, 015001 (2023)
+Citation: Merkel, K. & Ortmann, F. Journal of Physics: Materials 7, 015001 (2024)
 https://dx.doi.org/10.1088/2515-7639/ad06cd
 """
 from utils import *

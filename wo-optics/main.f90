@@ -80,7 +80,7 @@ program WannierOptics
         write(*,*) "                     \ \_\                                "
         write(*,*) "                      \/_/                                "
         write(*,*) ""
-        write(*,*) "Citation:  Merkel, K. & Ortmann, F. Journal of Physics: Materials 7, 015001 (2023)";
+        write(*,*) "Citation:  Merkel, K. & Ortmann, F. Journal of Physics: Materials 7, 015001 (2024)";
         write(*,*) "           https://dx.doi.org/10.1088/2515-7639/ad06cd";
         write(*,*) ""
         write(*,*) ""
