@@ -138,10 +138,6 @@ program WannierOptics
     if (p_id.eq.0) CALL system('mkdir -p ./output')
     outPathStr = './output/'
 
-    ! save copy of PARFILE to make it easier to use
-    ! new PARFILE in the transition periode
-    call config%save("newPARFILE", .TRUE.)
-
     ! set seed for each process
     CALL init_random_seed(p_id)
 
