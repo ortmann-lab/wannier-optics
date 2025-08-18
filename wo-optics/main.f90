@@ -41,7 +41,7 @@ program WannierOptics
     double complex, dimension(:), pointer   :: Psi_p    ! local part of localized state vector used in
                                                         ! time evolution loop and allocated at SparseCSR
     integer             :: ierr = 0 ! error handling
-    integer             :: i, tmp1, NAT1, NAT2, NPOL_converged
+    integer             :: i, tmp1, NPOL_converged
     integer             :: globId, Sx,Sy,Sz,m,l, n1,n2,n3  ! geometry and indexes
     integer*4           :: nsites
     double complex      :: dipole_norm, dipole_norm_proj
@@ -181,13 +181,8 @@ program WannierOptics
     ! set number of neighbors per site
     if (config%NNEIGH .le. 0) THEN
         ! determine number of transfer integrals
-        open(11,FILE='TINFILE_v',ACTION='READ')
-        read(11,*) NAT1
-        close(11)
-        open(12,FILE='TINFILE_c',ACTION='READ')
-        read(12,*) NAT2
-        close(12)
-        config%NNEIGH= NAT1/get_N_val() +  NAT2/get_N_con()   ! to be generalized
+        call estimate_num_neighbors(p_id, tmp1)
+        config%NNEIGH = tmp1
         if (p_id.eq.0) write(*,*) "Estimate number of neighbors per site to NNEIGH=", config%NNEIGH
     endif
 

@@ -13,8 +13,199 @@ module Hamiltonian
     implicit none
     PRIVATE
         
-    PUBLIC create_exciton_hamiltonian
+    PUBLIC create_exciton_hamiltonian, estimate_num_neighbors
     contains
+
+    SUBROUTINE estimate_num_neighbors(p_id, NNEIGH)
+        !
+        ! Estimates the number of neighboring sites (number of off-diagonal matrix entries in the CSR matrix) of the Hamiltonian.
+        ! This number has to be known in advance to be able to allocate optimal amount of memory.
+        ! The number is estimated by going through the construction of a minimal test Hamiltonian (without materializing it) and
+        ! counting the number of sites that would be needed.
+        !
+
+        IMPLICIT NONE
+        INTEGER, intent(in) ::  p_id
+        INTEGER, intent(out) :: NNEIGH
+
+        INTEGER ia, i, numTI
+        character(len=1024) :: filename
+        integer max_shift_i(3), max_shift_o(3), test_supercell(3)
+        integer maxS(3)
+
+        ! Variables for the calculation of neighbors
+        INTEGER ALLOC_ERR, elementId, ierr
+        integer NumExcitTI, NumExcitTIused
+        DOUBLE PRECISION gamma
+        DOUBLE COMPLEX, allocatable  :: TIsingle(:,:,:,:,:,:,:), TIexciton(:)
+        INTEGER, allocatable :: NNMAP(:,:), NNEIGH_per_site(:,:,:,:,:)
+        INTEGER, allocatable :: NNMAPexciton(:,:)
+
+        INTEGER :: c1,c2,v1,v2, Sx1, Sy1, Sz1, Sx2, Sy2, Sz2
+        logical :: useTIexciton
+        logical, allocatable ::  isUsedTIexciton(:)
+
+        !------------------------ End variable declaration --------------------------
+
+        NumExcitTIused=0
+
+
+        ! get max shift and allocate TI arrays
+        if(p_id.eq.0) THEN
+            write(*,*) ""
+            write(*,*) "Open files to estimate the number of neighbors..."
+        endif
+        filename="TINFILE_v"
+        call get_max_shift_from_tinfile(p_id, filename, max_shift_o)
+        filename="TINFILE_c"
+        call get_max_shift_from_tinfile(p_id, filename, max_shift_i)
+
+        ! get maximal shift for all single particle TIs
+        do i=1,3
+            max_shift_i(i) = max(max_shift_i(i), max_shift_o(i))
+        enddo
+
+        allocate(TIsingle(get_N_con(), get_N_val(), get_N_con(), get_N_val(), -max_shift_i(1):max_shift_i(1), &
+            & -max_shift_i(2):max_shift_i(2),-max_shift_i(3):max_shift_i(3)))
+
+        ! read all single particle TIs and the nearest neighbor map
+        call read_tinfile(p_id, numTI, NNMAP, TIsingle, gamma)
+
+        ! read (non-diagonal) Coulomb and local field effects matrix elements similar as TI
+        call get_max_shift_interaction_elements(p_id, maxS, NumExcitTI, useTIexciton)
+
+
+        ! allocate data structure for excitonic transfer integrals
+        if (useTIexciton) then
+            allocate(TIexciton(NumExcitTI))
+            allocate(NNMAPexciton(NumExcitTI, 10), STAT = ALLOC_ERR )
+            IF ( ALLOC_ERR .NE. 0 ) STOP "ERROR - ALLOCATION NNMAPexciton !!!"
+            TIexciton = (0.d0,0.d0)
+            NNMAPexciton = 0
+            NumExcitTIused = 0
+
+            ! read all excitonic transfer integrals
+            call read_localfieldeffects(p_id, gamma, TIexciton, NumExcitTI, NumExcitTIused, NNMAPexciton)
+            call read_coulombMatrix(p_id, gamma, TIexciton, NumExcitTI, NumExcitTIused, NNMAPexciton)
+
+            allocate(isUsedTIexciton(NumExcitTIused))
+            isUsedTIexciton = .false.
+
+        endif
+
+        do i=1,3
+            test_supercell(i) = max(max_shift_i(i), maxS(i))
+            test_supercell(i) = ABS(test_supercell(i))
+        enddo
+
+        ! if (p_id .eq. 0) then
+        !     write(*,*) "Test-Hamiltonian has size: ", test_supercell
+        ! endif
+
+        allocate(NNEIGH_per_site(-test_supercell(1):test_supercell(1), &
+                                & -test_supercell(2):test_supercell(2), &
+                                & -test_supercell(3):test_supercell(3), &
+                                &  get_N_con(), get_N_val()))
+
+        NNEIGH_per_site = 0
+
+        if(p_id.eq.0) THEN
+            write(*,*) "Estimate number of neighbors (off-diagonals of Hamiltonian)..."
+        endif
+
+        ! in the test-Hamiltonian all coordinates are shifted (starting with negative cell)
+        ! we cannot use the usual getExcitonIndex functions because they use a different
+        ! supercell.
+        do Sx1=-test_supercell(1),test_supercell(1)
+            if(p_id.eq.0) THEN
+                write(*,*) "Progress (%): ", (Sx1+test_supercell(1)) / (test_supercell(1)*2. + 1.)*100.
+            endif
+            do Sy1=-test_supercell(2),test_supercell(2)
+                do Sz1=-test_supercell(3),test_supercell(3)
+                    do c1=1,get_N_con()
+                        do v1=1,get_N_val()
+
+                            ! estimate max neighbors for single particle part
+
+                            NNEIGH_per_site(Sx1, Sy1, Sz1, c1, v1)=0
+                            do ia=1,numTI  ! go over all neighbors (in NNMAP)
+
+                                if((c1.eq.NNMAP(ia,1)).and.(v1.eq.NNMAP(ia,2))) then  ! searching for connections from site c1 to v1
+
+                                    ! get site index for neighbor
+                                    c2 = NNMAP(ia,3)
+                                    v2 = NNMAP(ia,4)
+                                    Sx2 = Sx1 + NNMAP(ia,5)  ! for single particle TIs we have S2-S1 in Hamiltonian
+                                    Sy2 = Sy1 + NNMAP(ia,6)
+                                    Sz2 = Sz1 + NNMAP(ia,7)
+
+                                    NNEIGH_per_site(Sx1, Sy1, Sz1, c1, v1) = NNEIGH_per_site(Sx1, Sy1, Sz1, c1, v1) +1
+
+
+                                    ! excitonic TIs that would connect the same sites should be marked as used to prevent double count
+                                    if (useTIexciton) then
+                                        ! get id in exciton neighbor array
+                                        call getNNMAPexcitonId(NNMAPexciton,NumExcitTI, NumExcitTIused, &
+                                            & c1,v1,Sx1,Sy1,Sz1, c2,v2,Sx2,Sy2,Sz2, elementId)
+
+                                        if (elementId.gt.0) then
+                                            isUsedTIexciton(elementId) = .true.  ! save as used (to prevent double usage)
+                                        endif
+                                    endif
+
+                                endif  !match c1,v1 index
+                            enddo !closes loop over neighbors
+
+
+                            ! estimate max neighbors for excitonic TIs that do not coincide with single particle TIs
+
+                            if (useTIexciton) then
+                                do ia=1,NumExcitTIused  ! go over all neighbors (in NNMAP)
+
+                                    if (isUsedTIexciton(ia)) cycle  ! already set by single particle contributions
+
+                                    if((c1.eq.NNMAPexciton(ia,1)).and.(v1.eq.NNMAPexciton(ia,2)).and.&
+                                        &(Sx1.eq.NNMAPexciton(ia,3)).and.(Sy1.eq.NNMAPexciton(ia,4)).and.&
+                                        &(Sz1.eq.NNMAPexciton(ia,5))) then  ! only connections from site c1,v1,S1
+
+                                        ! get site index for neighbor
+                                        c2 = NNMAPexciton(ia,6)
+                                        v2 = NNMAPexciton(ia,7)
+                                        Sx2 = NNMAPexciton(ia,8)
+                                        Sy2 = NNMAPexciton(ia,9)
+                                        Sz2 = NNMAPexciton(ia,10)
+
+                                        if ((c1.eq.c2).and.(v1.eq.v2).and.(Sx1.eq.Sx2).and.(Sy1.eq.Sy2).and.(Sz1.eq.Sz2)) cycle  ! diagonal elements
+
+                                        NNEIGH_per_site(Sx1, Sy1, Sz1, c1, v1) = NNEIGH_per_site(Sx1, Sy1, Sz1, c1, v1) +1
+
+                                    endif  !match c1,v1, S1 index
+                                enddo !closes loop over neighbors
+                            endif
+
+                        enddo ! v1
+                    enddo ! c1
+                enddo ! Sz1
+            enddo ! Sy1
+        enddo ! Sx1
+
+
+        NNEIGH = MAXVAL(NNEIGH_per_site)  ! output
+
+       
+        deallocate(NNMAP)
+        deallocate(TIsingle)
+        if (allocated(TIexciton)) deallocate(TIexciton)
+        if (allocated(NNMAPexciton)) deallocate(NNMAPexciton)
+        if (allocated(isUsedTIexciton)) deallocate(isUsedTIexciton)
+
+
+        call MPI_BARRIER(MPI_COMM_WORLD,ierr)
+        if (ierr /= 0) STOP "Error in MPI_BARRIER"
+
+        return
+
+    end subroutine
 
     SUBROUTINE create_exciton_hamiltonian(p_id, sites_p_len, sites_p,neiList,enList,traList, &
         & gamma, config)
