@@ -298,11 +298,12 @@ program WannierOptics
     ! create parallelized Hamiltonian
     call MPI_Barrier(MPI_COMM_WORLD, ierr)
     if (p_id .eq. 0) then
+        call get_supercell_dimensions(n1,n2,n3)
         write(*,*) ""
         write(*,*) "Setup and state preparation finished."
         write(*,*) "================================================================"
         write(*,*) ""
-        write(*,*) "Create Hamiltonian ..."
+        write(*,*) "Create Hamiltonian for supercell ", n1,n2,n3
     endif
 
 
