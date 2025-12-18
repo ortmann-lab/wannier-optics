@@ -1015,8 +1015,9 @@ int main(int argc, char *argv[]) {
                 string("; Energy threshold for 3- and 4-center integrals = ") + to_string(ENERGY_THRESHOLD)+ string("eV");
         }
 
-        list<Integral> filteredInts;  // intermediate results read from Coulomb files and filtered according to threshold values
-        list<Integral> allInts;       // all integrals that will be written to COULOMB file
+        map<vector<int>, Integral> all_conj;  // this map should contain all filtered integrals + their hermitian conjugates
+                                              // it is a map and not a list to prevent double integrals which might
+                                              // occure if the scheduler is not perfect.
         double max_dist = -1;
         for (size_t i=0; i<coulomb_files.size(); i++){
             string f = coulomb_files[i];
@@ -1024,6 +1025,7 @@ int main(int argc, char *argv[]) {
             auto file = CoulombFileReader(f);
             const vector<Integral>& tmp = file.getElements();
             auto unitcell_T = transpose3x3(unitcell);
+            list<Integral> filteredInts;  // intermediate results read from Coulomb files and filtered according to threshold values
 
             if (i==00 && ENABLE_TWO_CENTER_INTEGRALS) {
                 max_dist = file.getDist();
@@ -1060,9 +1062,6 @@ int main(int argc, char *argv[]) {
             }
 
             // add hermitian conjugate integrals to the list
-            map<vector<int>, Integral> all_conj;  // this map should contain all filtered integrals + their hermitian conjugates
-                                                  // it is a map and not a list to prevent double integrals which might
-                                                  // occure if the scheduler is not perfect.
             for (const auto& a: filteredInts) {
 
                 // insert all filtered integral from before
@@ -1089,17 +1088,21 @@ int main(int argc, char *argv[]) {
                 );
                 conj_int.value = a.value;
 
+                // insert hermitian conjugate if it is not self-conj.
                 if (a != conj_int) {
                     all_conj.insert({conj_int.indexes, conj_int});
                 }
             }
 
-            // append to all integrals and convert back to list
-            for (auto itr : all_conj) {
-                allInts.push_back(itr.second);
-            }
+            filteredInts.clear();
 
-            cout << "Total number of Coulomb integrals (+ hermitian conjugate): " << allInts.size() << endl;
+            cout << "Total number of Coulomb integrals (+ hermitian conjugate): " << all_conj.size() << endl;
+        }
+
+        list<Integral> allInts;       // all integrals that will be written to COULOMB file
+        // convert map back to list
+        for (auto itr : all_conj) {
+            allInts.push_back(itr.second);
         }
 
         cout << "Save COULOMB file." << endl;
