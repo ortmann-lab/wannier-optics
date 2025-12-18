@@ -1015,7 +1015,8 @@ int main(int argc, char *argv[]) {
                 string("; Energy threshold for 3- and 4-center integrals = ") + to_string(ENERGY_THRESHOLD)+ string("eV");
         }
 
-        list<Integral> all;
+        list<Integral> filteredInts;  // intermediate results read from Coulomb files and filtered according to threshold values
+        list<Integral> allInts;       // all integrals that will be written to COULOMB file
         double max_dist = -1;
         for (size_t i=0; i<coulomb_files.size(); i++){
             string f = coulomb_files[i];
@@ -1041,26 +1042,32 @@ int main(int argc, char *argv[]) {
                             });
 
                         if (dist<=max_dist)
-                            all.push_back(e);
+                            filteredInts.push_back(e);
                     }
                 }else{
                     cout << "Don't filter electron-hole distance because no distance is given." << endl;
                     for(const auto& e: tmp) {
-                        all.push_back(e);
+                        filteredInts.push_back(e);
                     }
                 }
             }else{
                 cout << "Only values >= " << ENERGY_THRESHOLD << " eV" << endl;
                 for(const auto& e: tmp) {
                     if (abs(e.value / SCREENING_RELATIVE_PERMITTIVITY)>= ENERGY_THRESHOLD) {  // filter by energy
-                        all.push_back(e);
+                        filteredInts.push_back(e);
                     }
                 }
             }
 
             // add hermitian conjugate integrals to the list
-            list<Integral> all_conj;
-            for (const auto& a: all) {
+            map<vector<int>, Integral> all_conj;  // this map should contain all filtered integrals + their hermitian conjugates
+                                                  // it is a map and not a list to prevent double integrals which might
+                                                  // occure if the scheduler is not perfect.
+            for (const auto& a: filteredInts) {
+
+                // insert all filtered integral from before
+                all_conj.insert({a.indexes, a});
+
                 vector<int> RD = a.getRD();
                 vector<int> Rc = a.getRc();
                 vector<int> Rv = a.getRv();
@@ -1083,18 +1090,20 @@ int main(int argc, char *argv[]) {
                 conj_int.value = a.value;
 
                 if (a != conj_int) {
-                    all_conj.push_back(conj_int);
+                    all_conj.insert({conj_int.indexes, conj_int});
                 }
             }
 
-            // merge all integrals and their hermitian conjugates
-            all.splice(all.end(), all_conj);
+            // append to all integrals and convert back to list
+            for (auto itr : all_conj) {
+                allInts.push_back(itr.second);
+            }
 
-            cout << "Total number of Coulomb integrals (+ hermitian conjugate): " << all.size() << endl;
+            cout << "Total number of Coulomb integrals (+ hermitian conjugate): " << allInts.size() << endl;
         }
 
         cout << "Save COULOMB file." << endl;
-        OutputService::writeResults("COULOMB", all,comment, max_dist,1.0/SCREENING_RELATIVE_PERMITTIVITY);
+        OutputService::writeResults("COULOMB", allInts,comment, max_dist,1.0/SCREENING_RELATIVE_PERMITTIVITY);
     }
 
     MPI_Barrier(MPI_COMM_WORLD);
