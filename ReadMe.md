@@ -3,7 +3,7 @@
 Publication: [Merkel, K. & Ortmann, F. Linear scaling approach for optical excitations using maximally localized Wannier functions. Journal of Physics: Materials 7, 015001 (2024).]( https://dx.doi.org/10.1088/2515-7639/ad06cd )
 
 
-The program implements the linear scaling Wannier optics method as described in the paper.
+The program implements the linear-scaling Wannier-Optics method as described in the paper.
 
 Starting from two separate Wannier90 calculations for electrons and holes, the code constructs localized Wannier representations of the valence and conduction bands. These single-particle Wannier Hamiltonians provide the electron and hole contributions to the effective electron--hole Hamiltonian. In addition, the code evaluates the optical transition dipole matrix elements, the statically screened electron--hole Coulomb interaction, and local-field effects. Together, these terms define the exciton Hamiltonian, which is represented as a sparse matrix and used to compute correlation functions as well as optical absorption and reflection spectra using an efficient Lanczos-based approach.
 
