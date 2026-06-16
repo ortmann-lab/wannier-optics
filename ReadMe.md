@@ -5,7 +5,7 @@ Publication: [Merkel, K. & Ortmann, F. Linear scaling approach for optical excit
 
 The program implements the linear scaling Wannier optics method as described in the paper.
 
-Starting from two separate Wannier90 calculations for electrons and holes, the code calculates the electron-hole transition matrix elements (optical transition dipoles) and all contributions of the exciton Hamiltonian, i.e. the tight-binding model, the Coulomb interaction and local field effects. These contributions are then used to construct the exciton Hamiltonian as a sparse matrix and to calculate correlation functions and optical absorption/reflection spectra using an efficient Lanczos approach.
+Starting from two separate Wannier90 calculations for electrons and holes, the code constructs localized Wannier representations of the valence and conduction bands. These single-particle Wannier Hamiltonians provide the electron and hole contributions to the effective electron--hole Hamiltonian. In addition, the code evaluates the optical transition dipole matrix elements, the statically screened electron--hole Coulomb interaction, and local-field effects. Together, these terms define the exciton Hamiltonian, which is represented as a sparse matrix and used to compute correlation functions as well as optical absorption and reflection spectra using an efficient Lanczos-based approach.
 
 All calculations use MPI and can run massively parallelized on high performance clusters.
 
